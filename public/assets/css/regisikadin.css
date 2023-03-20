@@ -1,0 +1,304 @@
+
+input[type=button] {
+    border-radius: 12px;
+    background: #E7F6F2;
+    border: 0px solid #E7F6F2;
+    color: #2D3260;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+
+input[type=text] {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+input[type=email] {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+input[type=password] {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+input[type=date] {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+input[type=number] {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+
+.wid-inp-0{
+    width: 335px;
+}
+.wid-inp {
+    width: 300px;
+}
+
+.wid-inp-1{
+    width: 400px;
+}
+
+.wid-inp-2 {
+    width: 200px;
+}
+
+.wid-inp-3 {
+    width: 123px;
+}
+
+.wid-inp-4 {
+    width: 100px;
+}
+
+.wid-inp-5{
+    width: 170px;
+}
+
+.wid-inp-6{
+    width: 340px;
+}
+
+
+.c-radio {
+    /* background-color: red; */
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.c-radio .inp {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+::placeholder {
+    color: #E7F6F2;
+    font-size: 16px;
+
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+    color: #E7F6F2;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 36px;
+    font-style: bold;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+
+.bold{
+    font-weight: bold;
+}
+
+.f-kanan{
+    float: right;
+}
+
+.f-kiri{
+    float: left;
+}
+
+.auto{
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+/* ----------MARGIN------------- */
+
+.m-kiri-1 {
+    margin-left: 15px;
+}
+
+.m-kiri-2{
+    margin-left: 30px;
+}
+
+.m-kiri-3{
+    margin-left: 20px;
+}
+.m-kiri-5{
+    margin-left: 190px;
+}
+
+.m-atas-1{
+    margin-top: 10px;
+}
+
+.m-atas-2 {
+    margin-top: 20px;
+}
+
+.m-atas-3 {
+    margin-top: 23px;
+}
+
+.m-atas-4{
+    margin-top: 43px;
+}
+
+.m-atas-5{
+    margin-top: 50px;
+}
+
+.m-atas-6{
+    margin-top: 70px;
+}
+.m-kanan-1 {
+    margin-right: 15px;
+}
+
+.m-kanan-2 {
+    margin-right: 50px;
+}
+
+.m-bawah-1 {
+    margin-bottom: 10px;
+}
+
+.m-bawah-3 {
+    margin-bottom: 23px;
+}
+
+.m-bawah-4{
+    margin-bottom: 44px;
+}
+
+.m-bawah-5{
+    margin-bottom: 100px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.head {
+    color: #E7F6F2;
+}
+
+.container-tengah{
+    position: absolute;
+    left: 10%;
+}

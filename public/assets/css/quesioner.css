@@ -1,0 +1,668 @@
+body {
+    font-family: 'Lexend', serif, sans-serif;
+}
+
+@media screen and (min-width: 601px) {
+    div.container {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    div.container,
+    button.attempt {
+        font-size: 10px;
+    }
+}
+
+.left {
+    float: left;
+}
+
+.back {
+    margin-top: 15px;
+}
+
+.header-quesioner {
+    font-size: 2.4vw;
+    /* margin-left: 20px; */
+    font-weight: normal;
+}
+
+.p-quesioner {
+    /* margin-left: 20px; */
+    width: 850px;
+    font-size: 1.3vw;
+}
+
+.ul-quesioner {
+    /* margin-left: 40px; */
+    font-size: 1.3vw;
+    width: 300px;
+}
+
+.attempt {
+    width: 170px;
+    height: 50px;
+    position: relative;
+    margin-top: 30px;
+    right: 45%;
+    border-radius: 6px;
+    background-color: #2D3260;
+    color: #E7F6F2;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    box-sizing: border-box;
+    z-index: 2;
+    float: right;
+    cursor: pointer;
+}
+
+/* =================== */
+/* HEADER - QUESTION */
+/* =================== */
+
+.header-question {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: #2D3260;
+    color: #E7F6F2;
+}
+
+.header-question a {
+    color: #E7F6F2;
+    font-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 51px;
+}
+
+.header-question a .fa {
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.header-question .header-back-question {
+    margin-top: 35px;
+    position: absolute;
+}
+
+/* =================== */
+/* footer - QUESTION */
+/* =================== */
+
+
+.question-container-footer {
+    position: relative;
+    /* top: -10px;
+    left: 0;
+    right: 0; */
+    background: #2D3260;
+    height: 100px;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+footer .question-container-footer {
+    color: #E7F6F2;
+    box-sizing: border-box;
+    /* margin-bottom: -10px ; */
+}
+
+footer .question-container-footer .auto {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    align-items: center;
+    line-height: 100px;
+}
+
+footer .question-container-footer .previous-content-footer-question {
+    /* float: left; */
+    position: relative;
+    z-index: 2;
+    /* background: red; */
+    line-height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+
+footer .question-container-footer .next-content-footer-question {
+    float: right;
+    /* background: red; */
+    margin-right: 15px;
+    line-height: 100px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+footer .footer-button-position {
+    margin-bottom: 100px;
+    /* background: red; */
+}
+
+.question-container-footer a {
+    color: #E7F6F2;
+    font-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.question-container-footer a .fa {
+    position: relative;
+    top: 8.5px;
+    /* margin-left5px: ; */
+}
+
+
+
+/* =================== */
+/* Container-Question */
+/* =================== */
+.container-question {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    /* background: red; */
+}
+
+/* =================== */
+/* Question-Kiri */
+/* =================== */
+
+.question-kiri {
+    box-sizing: border-box;
+    width: 70%;
+    /* height: 1000px; */
+    /* background: yellow; */
+    /* float: left; */
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.judul-question {
+    font-size: 32px;
+    color: black;
+}
+
+.container-question .question-kiri hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-question .question-kiri p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.container-question .question-kiri .soal .pertanyaan {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tombol-question-pg button {
+    width: 144px;
+    height: 47px;
+    margin: auto;
+    text-align: center;
+    line-height: 47px;
+    color: #E7F6F2;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #2D3260;
+    float: right;
+    margin-left: 25px;
+    border: 0px;
+}
+
+
+
+
+/* =================== */
+/* Question-Kanan */
+/* =================== */
+
+.question-kanan {
+    box-sizing: border-box;
+    width: 22.%;
+    /* height: 1000px; */
+    /* background: blue; */
+    float: right;
+    display: inline-block;
+    /* margin-right: 10px; */
+}
+
+.page-list {
+    width: 298px;
+    border-radius: 15px;
+    margin-right: 25px;
+    /* height: 100px; */
+    background-color: #2D3260;
+    color: #E7F6F2;
+    /* position: relative; */
+    /* z-index: 1; */
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.judul-page-list {
+    font-size: 14px;
+    color: #E7F6F2;
+    position: relative;
+    top: 15px;
+    left: 25px;
+}
+
+
+.question-kanan .page-list hr {
+    width: 80px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.number-soal {
+    width: 100%;
+    /* background: red; */
+    /* position: relative; */
+    margin-top: 40px;
+    margin-left: 20px;
+    top: 100px;
+}
+
+.number {
+    width: 78px;
+    height: 34px;
+    background: #E7F6F2;
+    color: #2D3260;
+    border-radius: 6px;
+    position: relative;
+    display: inline-block;
+    margin: 3px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.sukses {
+    background: #4DBD74;
+}
+
+.list-materi-container {
+    width: 298px;
+    border-radius: 15px;
+    /* height: 100px; */
+    background-color: #2D3260;
+    color: #E7F6F2;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px;
+    margin-top: 35px;
+}
+
+.list-materi-container .progress-materi-container {
+    background-color: #E7F6F2;
+    height: 54px;
+    border-radius: 13px 13px 0px 0px;
+    position: relative;
+    /* bottom: 2px; */
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+.progress {
+    /* margin-bottom: 100px; */
+}
+
+.list-materi-container .progress-materi-container .progress .progress-bar {
+    background-color: #4DBD74;
+}
+
+.list-materi-container .progress-materi-container .persentase-progress {
+    /* background-color: red; */
+    width: 150px;
+    float: left;
+    margin-left: 20px;
+    color: #2D3260;
+    margin-top: 8px;
+}
+
+.list-materi-container .progress-materi-container .task-complete-progress {
+    /* background-color: blue; */
+    width: 100px;
+    float: right;
+    margin-right: 20px;
+    text-align: right;
+    color: #2D3260;
+    margin-top: 8px;
+}
+
+
+.task-list-container {
+    padding: 20px 20px 10px 30px;
+}
+
+.lingkaran-task-list {
+    width: 15px;
+    height: 15px;
+    border: 2.5px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+}
+
+.lingkaran-task-list-sukses {
+    width: 15px;
+    height: 15px;
+    border: 2.5px solid #4DBD74;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    background-image: url(../img/ceklis.png);
+    background-size: 70%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background: ;
+}
+
+.fa-circle-check {
+    color: #4DBD74;
+    float: left;
+}
+
+.fa-circle {
+    float: left;
+}
+
+.task-list-container .list {
+    margin-bottom: 15px;
+}
+
+.task-list-container .list .task {
+    color: #E7F6F2;
+    width: 230px;
+    display: inline-block;
+    position: relative;
+    bottom: 1px;
+    padding-left: 5px;
+}
+
+
+
+
+/* =================== */
+/* QUESTION - HASIL */
+/* =================== */
+.container-question-hasil {
+    width: 425px;
+    margin: auto;
+    box-sizing: border-box;
+    color: #E7F6F2;
+}
+
+.container-question-hasil .question-hasil-setengah {
+    width: 48%;
+    font-size: 24px;
+    /* margin: 20px; */
+    background: #2D3260;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 45px;
+    text-align: center;
+}
+
+.container-question-hasil .question-hasil-full {
+    max-width: 100%;
+    width: 100%;
+    /* margin: 20px; */
+    background: #2D3260;
+    display: inline-block;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+}
+
+.container-question-hasil button {
+    box-sizing: border-box;
+    width: 173px;
+    height: 39px;
+    font-size: 18px;
+    margin: auto;
+    background: #2D3260;
+    color: #E7F6F2;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+/* =================== */
+/* RADIO */
+/* =================== */
+/* =================== */
+/* The container */
+/* =================== */
+
+.radio-question {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    padding-top: 2px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-question input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-question:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-question input:checked~.checkmark {
+    background-color: rgb(217, 217, 217, .72);
+    border: solid 1px #2D3260;
+    /* UBAH WARNA DOTS */
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    background: #2D3260;
+    /* border: solid 1px #2D3260; */
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-question input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-question .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    /* background: #2D3260; */
+    /* UBAH WARNA DOTS */
+}
+
+.benar:after {
+    background: #4DBD74;
+    color: #4DBD74;
+    border: #4DBD74;
+}
+
+.benar {
+    color: #4DBD74;
+}
+
+.salah {
+    color: red;
+}
+
+.salah:after {
+    background: red;
+    color: red;
+    border: red;
+}
+
+
+.radio-question input:checked~.benar {
+    border: solid 1px #4DBD74;
+    /* UBAH WARNA DOTS */
+}
+
+.radio-question input:checked~.salah {
+    border: solid 1px red;
+    /* UBAH WARNA DOTS */
+}
+
+
+
+
+/* =================== */
+/* MODAL-QUESTION */
+/* =================== */
+
+.container-question-modal {
+    width: 485px;
+    height: 417px;
+    background: #2D3260;
+    color: #E7F6F2;
+    box-sizing: border-box;
+    border-radius: 18px;
+    margin: auto;
+    padding: 30px 10px 10px 10px;
+    margin-top: 20px;
+}
+
+.container-question-modal .judul-modal-question {
+    font-weight: bold;
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+}
+
+.container-question-modal .ket-modal-question {
+    font-weight: bold;
+    font-size: 14px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container-question-modal img {
+    /* background: #000; */
+    margin-top: 20px;
+}
+
+.container-question-modal .question-tombol-modal {
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container-question-modal button {
+    width: 110px;
+    height: 38px;
+    border-radius: 5px;
+    /* color: #2D3260; */
+    margin-right: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.con-close {
+    /* background: #000; */
+    width: 100%;
+    height: 10px;
+    position: relative;
+    top: -20px;
+    /* right: ; */
+}
+
+.con-close .close-right {
+    background-image: url(../img/close.png);
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    float: right;
+    position: absolute;
+    right: 0;
+    /* left: 0; */
+    /* top: -10p; */
+}
+
+.con-close .close-left {
+    background-image: url(../img/close.png);
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    float: right;
+    position: absolute;
+    right: 0;
+    /* left: 0; */
+    /* top: -10p; */
+}
+
+
+.single-page-content {
+    display: none;
+}
+
+.active-single-page {
+    display: block;
+}
+

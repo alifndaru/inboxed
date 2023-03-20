@@ -1,0 +1,682 @@
+/* ================================== */
+/* ========== STEP - HTML =========== */
+/* ================================== */
+
+.kembalasi {
+    background-image: url(../img/back.png);
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-color: red;
+
+}
+
+.f-black {
+    color: #000000;
+}
+
+.gambar-80x80 {
+    width: 80px;
+    height: 80px;
+}
+
+.line-h-80 {
+    line-height: 80px;
+}
+
+.m-kiri-85 {
+    margin-left: 85px;
+}
+
+.langkah-verifikasi {
+    width: 100%;
+    height: 290px;
+    margin-top: 25px;
+}
+
+.langkah-verifikasi .langkah {
+    width: 246px;
+    height: 290px;
+    border: 1px solid #E7F6F2;
+    border-radius: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 15px;
+    ;
+}
+
+.langkah-verifikasi .langkah .judul-langkah {
+    background-color: #D9D9D9;
+    width: 99px;
+    height: 26px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 26px;
+    margin: auto;
+    padding-left: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.langkah-verifikasi .langkah .judul {
+    /* background-color: red; */
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.langkah-verifikasi .langkah img {
+    margin-top: 20px;
+    margin: auto;
+    /* align-items: center; */
+    width: 100px;
+
+}
+
+.langkah-verifikasi .langkah .gambar-langkah {
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.langkah-verifikasi .langkah .penjelasan {
+    font-size: 14px;
+    margin: auto;
+    text-align: center;
+    /* width: 200px; */
+}
+
+.justify {
+    text-align: justify;
+}
+
+/* ================================== */
+/* ======== FORMAT CONTAINER ======== */
+/* ================================== */
+
+.form-cont-pop-450x500 {
+    border: 1px solid #2D3260;
+    width: 450px;
+    ;
+    border-radius: 25px;
+    background-color: #2D3260;
+    box-sizing: border-box;
+}
+
+
+.sukses {
+    color: #26D3A4;
+}
+
+.gagal {
+    color: #FF0000;
+}
+
+
+/* ================================== */
+/* ========= INPUT - GENDER ========= */
+/* ================================== */
+input[type=radio]:not(old) {
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    opacity: 0;
+}
+
+input[type=radio]:not(old)+label {
+    display: inline-block;
+    margin-left: -1em;
+    line-height: 1.5em;
+}
+
+input[type=radio]:not(old)+label>span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    /* border           : 0.0625em solid rgb(192,192,192); */
+    border-radius: 50%;
+    background: #E7F6F2;
+    background-image: -moz-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: -ms-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: -o-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: -webkit-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: linear-gradient(#E7F6F2, #E7F6F2);
+    vertical-align: bottom;
+}
+
+input[type=radio]:not(old):checked+label>span {
+    background-image: -moz-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: -ms-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: -o-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: -webkit-linear-gradient(#E7F6F2, #E7F6F2);
+    background-image: linear-gradient(#E7F6F2, #E7F6F2);
+}
+
+input[type=radio]:not(old):checked+label>span>span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 2.2px;
+    border: 0.0625em solid rgb(115, 153, 77);
+    border-radius: 50%;
+    background: #2D3260;
+    background-image: -moz-linear-gradient(#2D3260, #2D3260);
+    background-image: -ms-linear-gradient(#2D3260, #2D3260);
+    background-image: -o-linear-gradient(#2D3260, #2D3260);
+    background-image: -webkit-linear-gradient(#2D3260, #2D3260);
+    background-image: linear-gradient(#2D3260, #2D3260);
+}
+
+.cover {
+    background-size: cover
+}
+
+.box-sizing {
+    box-sizing: border-box;
+}
+
+/* ================================== */
+/* ======= INPUT - FILE(DIV) ======== */
+/* ================================== */
+
+.uploader {
+    width: 641px;
+    height: 96px;
+    border: 3px dashed white;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+}
+
+.main-container input[type=file] {
+    display: none;
+}
+
+.gambar-upload {
+    background-image: url(../img/upload.png);
+
+}
+
+.d-none {
+    display: none;
+}
+
+.posisi-hasil-upload {
+    /* padding-top: 40px;
+    margin-top: 40px; */
+    line-height: 96px;
+}
+
+
+
+
+
+
+
+
+
+/* ============================= */
+/* =        HOME - PAGE        = */
+/* ============================= */
+
+.full-container-b {
+    width: 100%;
+    background-color: #2D3260;
+    color: white;
+    box-sizing: border-box;
+}
+
+.full-container-g {
+    width: 100%;
+    background-color: rgb(119, 119, 119, .11);
+    color: white;
+    box-sizing: border-box;
+}
+
+.full-container-b img {
+    margin-right: 20px;
+    width: 5%;
+    height: 5%;
+}
+
+
+/* Lingkaran */
+.lingkaran-home {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.wait-1 {
+    background-color: #D9D9D9;
+}
+
+
+/* PRODUK */
+.container-w {
+    padding-bottom: 10px;
+    width: 80%;
+    color: black;
+    box-sizing: border-box;
+}
+
+.container-w .judul-produk{
+    margin-bottom: 60px;
+}
+
+.produk {
+    width: 255px;
+    height: 372px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #2D3260;
+    display: inline-block;
+    margin: 20px 20px 0px 20px;
+    /* box-shadow: 0px 2px 1px 0px black; */
+}
+
+.value-keterangan-produk{
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    height: 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 10px 0px 0px 10px;
+    /* padding: 5px; */
+    padding: 5px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.free{
+    background-color: #FF0000;
+}
+
+.profesion{
+    background-color: #FF0000;
+}
+
+.courses{
+    background-color: #13DB63;
+}
+
+.sertification{
+    background-color: #13DB63;
+}
+
+.keterangan-produk{
+    position: absolute;
+}
+
+.produk .foto-produk {
+    width: 255px;
+    height: 140px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.judul-produk{
+    /* margin-top: -30px; */
+}
+
+.judul-produk-webinar{
+    margin-top: -30px;
+}
+
+.detail{
+    width: 113px;
+    height: 29px;
+    border-radius: 15px;
+    background-color: #2D3260;
+    color: #E7F6F2;
+    position: absolute;
+    /* bottom: 50px; */
+    top: 120px;
+    left: 52%;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 29px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    z-index: 2;
+    float: right;
+}
+
+.detail img{
+    display: inline-block;
+    width: 5px;
+    float: right;
+    height: 10px;
+    margin-top: 9.5px;
+    margin-right: 10px;
+}
+
+/* HARGA-PRODUK */
+.container-harga-home{
+    margin-top: 15px;
+    width: 90%;
+    /* background-color: red; */
+}
+
+.diskon{
+    float: right;
+    color: red;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.harga{
+    margin-top: 5px;
+    color: #E7F6F2;
+    font-size: 18px;
+    /* padding-top: 15px;  */
+}
+
+/* NEXT-PRODUK */
+.next {
+    width: 60px;
+    height: 60px;
+    background-color: #2D3260;
+    border-radius: 15px;
+    display: inline-block;
+    position: relative;
+    bottom: 100px;
+    /* margin: 0 20px; */
+}
+
+.next img {
+    position: relative;
+    top: 15px;
+    /* left: 15px; */
+}
+
+.next-slider-teacher-home{
+    width: 60px;
+    height: 60px;
+    background-color: #2D3260;
+    border-radius: 15px;
+    /* margin: auto; */
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    top: 170px;
+}
+
+.next-slider-teacher-home img {
+    position: relative;
+    top: 15px;
+    /* left: 15px; */
+}
+
+.slider-kanan-home{
+    bottom: 280px;
+    left: -30px;
+}
+
+.slider-kiri-home{
+    bottom: 280px;
+    right: -30px;
+}
+
+
+.putih {
+    color: white;
+}
+
+.left {
+    text-align: left;
+}
+
+.produk .kalender img,
+.alarm img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+.produk .kalender .font-18,
+.alarm .font-18 {
+    position: relative;
+    bottom: 5px;
+    left: 40px;
+}
+
+
+
+/* SEARCH - PRODUK */
+
+
+.logo-search-produk {
+    position: relative;
+    background-color: white;
+    left: 50px;
+    z-index: 10;
+    top: 3px;
+}
+
+.fa-search{
+    width: 10px;
+    height: 10px;
+}
+
+.fa{
+    width: 10px;
+    height: 10px;
+}
+
+.search-produk {
+    /* position: absolute; */
+    width: 241px;
+    height: 35px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 15px;
+    padding-left: 35px;
+}
+
+.search-produk::placeholder {
+    color: black;
+    line-height: 35px;
+}
+
+.search {
+    width: 719px;
+    height: 53px;
+    display: inline-block;
+    border-radius: 15px;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 18px;
+    padding-right: 200px;
+    margin-left: 202px;
+}
+
+.search::placeholder {
+    color: #7B7D8E;
+    font-size: 18px;
+}
+
+.search-button {
+    background-color: #2D3260;
+    width: 198px;
+    height: 53px;
+    /* display: inline-block; */
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.right-622 {
+    position: relative;
+    right: 202px;
+    bottom: 1px;
+}
+
+/* KATEGORI */
+
+.kategori {
+    width: 950px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.container-category {
+    width: 282px;
+    height: 120px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 15px 15px 20px 15px;
+    box-sizing: border-box;
+}
+
+.kategori .container-category img {
+    margin-bottom: 15px;
+}
+
+.hitam {
+    color: black;
+}
+
+
+/* TEACHER */
+
+.teacher{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    background-color: #2D3260;
+    background-image: url(../img/teacher.png);
+    background-size: cover;
+    /* height: 100px; */
+    margin-bottom: 100px;
+    box-sizing: border-box;
+}
+
+.profile-teacher{
+    width: 178px;
+    height: 166px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.profile-teacher img{
+    width: 100%;
+    height: 166px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.index-1{
+    z-index: 1;
+}
+
+.index-2{
+    z-index: 2;
+}
+
+.opacity-0{
+    opacity: none;
+}
+
+.full-container-b-opacity {
+    width: 100%;
+    height: 500px;
+    background-color: #2D3260;
+    color: white;
+    box-sizing: border-box;
+    opacity: .9;
+}
+
+.container-nama-teacher{
+    width: 403px;
+    height: 147px;
+    margin: auto;
+    position: relative;
+    bottom: 50px;
+    box-sizing: border-box;
+}
+.nama-teacher{
+    width: 403px;
+    height: 147px;
+    background-color: white;
+    opacity: .6;
+    text-align: center;
+}
+
+.container-nama-teacher .nama{
+    font-size: 20px;
+    padding-top: 55px;
+    color: white;
+    /* line-height: 147px; */
+    width: 403px;
+    height: 147px;
+    box-sizing: border-box;
+    opacity: 1;
+    position: relative;
+    bottom: 147px;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.teach-button button{
+    width: 181px;
+    height: 50px;
+    background-color: #2D3260;
+    color: #E7F6F2;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    bottom: 120px;
+    left: 160px;
+
+}
+
+.container-nama-teacher .center{
+    /* margin-bottom: 100px; */
+    position: relative;
+    top: 40px;
+}
+
+
+.teacher .rlt .center .next{
+    position: relative;
+    bottom: 300px;
+}
+
+
+/* PAYMENT */
+.payment-home{
+    /* background-color: red; */
+    text-align: center;
+}
+
+/* .gambar{
+    text-align: center;
+    display: inline-block;
+    background-color: blue;
+} */
+
+.payment-home .gambar img {
+    display: inline-block;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.payment-home .judul-payment{
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
