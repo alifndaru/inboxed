@@ -431,14 +431,14 @@
                     <button class="logo-search-produk index-1" style="font-size: 0.5rem;" type="submit">
                         <i class="fa fa-search fa-3x"></i>
                     </button>
-                    <input class="font-18 search-produk" type="search" placeholder="Search" name="" id="">
+                    <input class="font-18 search-produk" type="search" placeholder="Search" name="" id="search-course">
                 </div>
             </div> <!-- JUDUL -->
             <div class="center">
     
                 <!-- =================  PRODUK-1  =============== -->
                 <!-- Slider container -->
-                <div id="Product-Home" class="Product-Home">
+                <div id="course-search" class="Product-Home">
                     <!-- slider -->
                     @foreach ($course as $c)
                     <div class="m-bawah-10">
@@ -462,9 +462,6 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
                                 <div class="font-18 width-232 m-kiri-10 m-bawah-20 height-60">{{ $c->title }}</div>
-                                <!-- <div class="font-18 width-232 m-kiri-10 m-bawah-20 red height-70">Lorem15</div> -->
-                                <!-- <div class="abs index-2 red"> -->
-                                    
                                     <div class="font-9 m-kiri-10"> instructur : </div>
                                     <div class="font-9 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>
                                     
@@ -472,11 +469,8 @@
                                     <div class="container-harga-home auto">
                                         <div class="diskon inline-block">{{$appCurrency['symbol']}} {{ $c->price }}</div>
                                         <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div>
-                                        <!-- <div class="rating"> -->
                                             <br> rating :
-                                            <!-- </div> -->
                                     </div>
-                                <!-- </div> -->
                             </div>
                         </div>
                     </div>
@@ -498,7 +492,7 @@
                     <button class="logo-search-produk index-1" style="font-size: 0.5rem;" type="submit">
                         <i class="fa fa-search fa-3x"></i>
                     </button>
-                    <input class="font-18 search-produk" type="search" placeholder="Search" name="" id="">
+                    <input class="font-18 search-produk" type="search" placeholder="Search" name="" id="search">
                 </div>
             </div> <!-- JUDUL -->
             <div class="center">
