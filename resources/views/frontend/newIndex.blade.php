@@ -207,17 +207,18 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;"> Lorem ipsum dolor sit amet consectetur. </div>
-                                <div class="font-9 m-kiri-10"> instructur : </div>
-                                <div class="font-9 width-232 m-kiri-10"> NAMA INSTRUKTUR </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10; color:#E7F6F2;"> Cara Mengelola Keuangan
+Untuk Millenial  </div>
+                                <div class="font-12 m-kiri-10"> Instructure : </div>
+                                <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
                                 <!-- =================  TANGGAL-PRODUK  =============== -->
                                 <div class="kalender">
                                     <img class="kalender" src="assets/img/kalender.png" alt="">
-                                    <div class="font-18">24 April 2022</div>
+                                    <div class="font-18">24 April 222</div>
                                 </div>
-                                <div class="alarm">
-                                    <img class="alarm" src="assets/img/alarm.png" alt="">
+                                <div class="alarm m-negativ">
+                                    <img class="alarm m-negativ" src="assets/img/alarm.png" alt="">
                                     <div class="font-18">13.00 - 16.00 WIB</div>
                                 </div>
                             </div>
@@ -238,17 +239,18 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;"> Lorem ipsum dolor sit amet consectetur. </div>
-                                <div class="font-9 m-kiri-10"> instructur : </div>
-                                <div class="font-9 width-232 m-kiri-10"> NAMA INSTRUKTUR </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10; color:#E7F6F2;`"> Cara Mengelola Keuangan
+Untuk Millenial  </div>
+                                <div class="font-12 m-kiri-10"> Instructure : </div>
+                                <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
                                 <!-- =================  TANGGAL-PRODUK  =============== -->
                                 <div class="kalender">
                                     <img class="kalender" src="assets/img/kalender.png" alt="">
                                     <div class="font-18">24 April 2022</div>
                                 </div>
-                                <div class="alarm">
-                                    <img class="alarm" src="assets/img/alarm.png" alt="">
+                                <div class="alarm m-negativ">
+                                    <img class="alarm m-negativ" src="assets/img/alarm.png" alt="">
                                     <div class="font-18">13.00 - 16.00 WIB</div>
                                 </div>
                             </div>
@@ -269,17 +271,18 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;"> Lorem ipsum dolor sit amet consectetur. </div>
-                                <div class="font-9 m-kiri-10"> instructur : </div>
-                                <div class="font-9 width-232 m-kiri-10"> NAMA INSTRUKTUR </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;  color:#E7F6F2;"> Cara Mengelola Keuangan
+Untuk Millenial  </div>
+                                <div class="font-12 m-kiri-10"> Instructure : </div>
+                                <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
                                 <!-- =================  TANGGAL-PRODUK  =============== -->
                                 <div class="kalender">
                                     <img class="kalender" src="assets/img/kalender.png" alt="">
                                     <div class="font-18">24 April 2022</div>
                                 </div>
-                                <div class="alarm">
-                                    <img class="alarm" src="assets/img/alarm.png" alt="">
+                                <div class="alarm m-negativ">
+                                    <img class="alarm m-negativ" src="assets/img/alarm.png" alt="">
                                     <div class="font-18">13.00 - 16.00 WIB</div>
                                 </div>
                             </div>
@@ -300,17 +303,18 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;"> Lorem ipsum dolor sit amet consectetur. </div>
-                                <div class="font-9 m-kiri-10"> instructur : </div>
-                                <div class="font-9 width-232 m-kiri-10"> NAMA INSTRUKTUR </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;  color:#E7F6F2;"> Cara Mengelola Keuangan
+Untuk Millenial  </div>
+                                <div class="font-12 m-kiri-10"> Instructure : </div>
+                                <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
                                 <!-- =================  TANGGAL-PRODUK  =============== -->
                                 <div class="kalender">
                                     <img class="kalender" src="assets/img/kalender.png" alt="">
                                     <div class="font-18">24 April 2022</div>
                                 </div>
-                                <div class="alarm">
-                                    <img class="alarm" src="assets/img/alarm.png" alt="">
+                                <div class="alarm m-negativ">
+                                    <img class="alarm m-negativ" src="assets/img/alarm.png" alt="">
                                     <div class="font-18">13.00 - 16.00 WIB</div>
                                 </div>
                             </div>
@@ -331,17 +335,18 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;"> Lorem ipsum dolor sit amet consectetur. </div>
-                                <div class="font-9 m-kiri-10"> instructur : </div>
-                                <div class="font-9 width-232 m-kiri-10"> NAMA INSTRUKTUR </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;  color:#E7F6F2;"> Cara Mengelola Keuangan
+Untuk Millenial  </div>
+                                <div class="font-12 m-kiri-10"> Instructure : </div>
+                                <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
                                 <!-- =================  TANGGAL-PRODUK  =============== -->
                                 <div class="kalender">
                                     <img class="kalender" src="assets/img/kalender.png" alt="">
                                     <div class="font-18">24 April 2022</div>
                                 </div>
-                                <div class="alarm">
-                                    <img class="alarm" src="assets/img/alarm.png" alt="">
+                                <div class="alarm m-negativ">
+                                    <img class="alarm m-negativ" src="assets/img/alarm.png" alt="">
                                     <div class="font-18">13.00 - 16.00 WIB</div>
                                 </div>
                             </div>
@@ -362,17 +367,18 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;"> Lorem ipsum dolor sit amet consectetur. </div>
-                                <div class="font-9 m-kiri-10"> instructur : </div>
-                                <div class="font-9 width-232 m-kiri-10"> NAMA INSTRUKTUR </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;  color:#E7F6F2;"> Cara Mengelola Keuangan
+Untuk Millenial</div>
+                                <div class="font-12 m-kiri-10"> Instructure : </div>
+                                <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
                                 <!-- =================  TANGGAL-PRODUK  =============== -->
                                 <div class="kalender">
                                     <img class="kalender" src="assets/img/kalender.png" alt="">
                                     <div class="font-18">24 April 2022</div>
                                 </div>
-                                <div class="alarm">
-                                    <img class="alarm" src="assets/img/alarm.png" alt="">
+                                <div class="alarm m-negativ">
+                                    <img class="alarm m-negativ" src="assets/img/alarm.png" alt="">
                                     <div class="font-18">13.00 - 16.00 WIB</div>
                                 </div>
                             </div>
@@ -393,17 +399,18 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;"> Lorem ipsum dolor sit amet consectetur. </div>
-                                <div class="font-9 m-kiri-10"> instructur : </div>
-                                <div class="font-9 width-232 m-kiri-10"> NAMA INSTRUKTUR </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;  color:#E7F6F2;"> Cara Mengelola Keuangan
+Untuk Millenial  </div>
+                                <div class="font-12 m-kiri-10"> Instructure : </div>
+                                <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
                                 <!-- =================  TANGGAL-PRODUK  =============== -->
                                 <div class="kalender">
                                     <img class="kalender" src="assets/img/kalender.png" alt="">
                                     <div class="font-18">24 April 2022</div>
                                 </div>
-                                <div class="alarm">
-                                    <img class="alarm" src="assets/img/alarm.png" alt="">
+                                <div class="alarm m-negativ">
+                                    <img class="alarm m-negativ" src="assets/img/alarm.png" alt="">
                                     <div class="font-18">13.00 - 16.00 WIB</div>
                                 </div>
                             </div>
@@ -465,8 +472,8 @@
                                 <!-- <div class="font-18 width-232 m-kiri-10 m-bawah-20 red height-70">Lorem15</div> -->
                                 <!-- <div class="abs index-2 red"> -->
                                     
-                                    <div class="font-9 m-kiri-10"> instructur : </div>
-                                    <div class="font-9 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>
+                                    <div class="font-12 m-kiri-10"> Instructure : </div>
+                                    <div class="font-12 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>
                                     
                                     <!-- =================  HARGA-PRODUK  =============== -->
                                     <div class="container-harga-home auto">
@@ -529,8 +536,8 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
                                 <div class="font-18 width-232 m-kiri-10 m-bawah-20">{{ $b->title }}</div>
-                                <div class="font-9 m-kiri-10"> instructur : </div>
-                                <div class="font-9 width-232 m-kiri-10">{{ $b->courses[0]->teachers[0]->first_name}} {{ $b->courses[0]->teachers[0]->last_name}}</div>
+                                <div class="font-12 m-kiri-10"> Instructure : </div>
+                                <div class="font-12 width-232 m-kiri-10">{{ $b->courses[0]->teachers[0]->first_name}} {{ $b->courses[0]->teachers[0]->last_name}}</div>
     
                                 <!-- =================  HARGA-PRODUK  =============== -->
                                 <div class="container-harga-home auto">
@@ -648,7 +655,7 @@
                                         <!-- PROFILE PENGAJAR - NAMA -->
                                         Dr. Ir. Muhammad Fadhil Darussalam M.phD
                                         <br> <br>
-                                        Instructure
+                                        Instructuree
     
                                     </div>
                                 </div>
