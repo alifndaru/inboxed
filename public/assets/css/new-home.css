@@ -680,3 +680,7 @@ input[type=radio]:not(old):checked+label>span>span {
     font-weight: bold;
     margin-bottom: 40px;
 }
+
+.m-negativ{
+    margin-top: -10px;
+}

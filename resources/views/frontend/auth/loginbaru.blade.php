@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="assets/img/inboxed.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,12 +27,12 @@
             font-family: 'Lexend', sans-serif, serif;
         }
         .field-icon {
-  float: right;
-  margin-left: -25px;
-  margin-top: -25px;
-  position: absolute;;
-  z-index: 2;
-}
+        float: right;
+        margin-left: -25px;
+        margin-top: -25px;
+        position: absolute;;
+        z-index: 2;
+        }
 
     </style>
 </head>
@@ -111,12 +112,24 @@
         });
     </script>
 
+    <script>
+        function closeModal() {
+  // Get the modal element
+  const modal = document.getElementById('modalprofesi123');
+
+  // Set the display property to "none" to hide the modal
+  modal.style.display = 'none';
+}
+    </script>
+
     <div id="modalprofesi123" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-        <div class="main-container container-tengah p-20 p-bawah-20 head" style="height: 250px;">
+
+        <div class="main-container container-tengah p-20 p-bawah-20 head" style="height: 250px; position:absolute; margin-left:-520px;">
             <div class="head-container">
-                &times;
-                </button>
+                <span class="close"><img src="assets/img/close.png" onclick="closeModal()" id="close" style="position:relative; margin-left:350px; padding-top:10px;"></span>
+                {{-- <button onclick="closeModal()" id="close"style="margin-left:350px; margin-top:10px; padding-top:20px;">&times;</button> --}}
+                
                 <div class="width-48 auto m-bawah-20">
                 </div>
                 <div class="font-24 m-bawah-20 center">PILIH JENIS PENDAFTARAN</div>
@@ -126,8 +139,8 @@
                 <div class="m-kiri-50 wid-inp-6 m-bawah-20 m-atas-10" style="color: white">Competency <br>Certification</div>
                 </a>
                 <a href="/regisikadin">
-                <img class="m-kiri-50 p-kiri-20" src="assets/img/student.png" style="position: absolute; top:90px; padding-left:210px;"> 
-                <div class="m-kiri-50 wid-inp-6 m-bawah-20 m-atas-10 center" style="position: absolute; top:154px; padding-left:150px; color:#fff">Proffesion <br>Certification</div>
+                <img class="m-kiri-50 p-kiri-20" src="assets/img/student.png" style="position: absolute; top:105px; padding-left:210px;""> 
+                <div class="m-kiri-50 wid-inp-6 m-bawah-20 m-atas-10 center" style="position: absolute; top:173px; padding-left:150px; color:#fff">Proffesion <br>Certification</div>
                 </a>
                 
             </div>
