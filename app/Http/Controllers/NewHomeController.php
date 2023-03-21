@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use App\Models\Course;
 use App\Models\Bundle;
 use App\Models\auth\User;
+// use App\Models\BundleCourses;
 
 use App\Models\NewHome;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 
 class NewHomeController extends Controller
 {
@@ -25,8 +27,8 @@ class NewHomeController extends Controller
 
             'course'=>Course::where('popular','=',1)->where('published','=',1)->get(),
             'bundle'=>Bundle::where('popular','=',1)->where('published','=',1)->get(),
-            'teacher'=>User::role('teacher')->get()
-
+            'teacher'=>User::role('teacher')->get(),
+            'category'=> Category::where('status','=','1')->get()
         
 
 

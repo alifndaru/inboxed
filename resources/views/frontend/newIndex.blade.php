@@ -563,7 +563,18 @@ Untuk Millenial  </div>
                 <button class="search-button right-622">Search</button>
             </div>
             <div class="font-36 m-bawah-25">Or Choose Category</div>
-    
+
+            <div class="kategori">
+                @foreach($category as $c)
+                <a href="#">
+                    <div class="container-category p-atas-25">
+                        <div class="{{$c->icon}} fa-2x" style="margin-bottom: 20px;"></div>
+                        <div class="font-18 ">{{$c->name}}</div>
+                    </div>
+                </a>
+                @endforeach
+            </div>
+
             <div class="kategori">
                 <a href="">
                     <div class="container-category p-atas-25">
