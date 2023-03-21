@@ -470,8 +470,8 @@
                                     
                                     <!-- =================  HARGA-PRODUK  =============== -->
                                     <div class="container-harga-home auto">
-                                        <div class="diskon inline-block">Rp. {{ $c->price }}</div>
-                                        <div class="harga inline-block">Rp. {{ $c->strike }}</div>
+                                        <div class="diskon inline-block">{{$appCurrency['symbol']}} {{ $c->price }}</div>
+                                        <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div>
                                         <!-- <div class="rating"> -->
                                             <br> rating :
                                             <!-- </div> -->

@@ -131,7 +131,14 @@ return [
         'symbol' => '฿',
         'name' => 'Thai baht',
         'country' => 'Thailand'
+    ],
+    [
+        'short_code' => 'Rp',
+        'symbol' => 'Rp',
+        'name' => 'Rupiah',
+        'country' => 'Indonesia'
     ]
+    
 
 
 ];
