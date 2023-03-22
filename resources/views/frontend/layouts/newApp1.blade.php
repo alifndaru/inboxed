@@ -200,10 +200,8 @@
                             <div class="judul-produk">
                                 <div class="font-18 width-232 m-kiri-10 m-bawah-20 height-60">`+res.courses[i].title+`</div>
                                     <div class="font-9 m-kiri-10"> instructur : </div>
-                                    <div class="font-9 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>
-                                    <div class="font-9 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>
-                                    
-                                    <!-- =================  HARGA-PRODUK  =============== -->
+                                                            
+                                     <!-- =================  HARGA-PRODUK  =============== -->
                                     <div class="container-harga-home auto">
                                         <div class="diskon inline-block">{{$appCurrency['symbol']}} {{ $c->price }}</div>
                                         <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div>
