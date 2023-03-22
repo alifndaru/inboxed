@@ -4,14 +4,14 @@
 
     $verify_key = Str::random(100);
 
- if(isset($hasil)){
-    $first_name = '';
-    $last_name = '';
-    $email = '';
-    $password = '';
-    $password_confirmation = '';
-    $verify_key ='';
- }
+//  if(isset($hasil)){
+//     $first_name = '';
+//     $last_name = '';
+//     $email = '';
+//     $password = '';
+//     $password_confirmation = '';
+//     $verify_key ='';
+//  }
 
  
 ?>
@@ -122,27 +122,27 @@
             <div class="width-335 auto">
                 <form action="newregis2" method="post">
                     @csrf
-                    <input type="hidden" name="first_name" value="{{ $first_name }}">
-                    <input type="hidden" name="last_name" value="{{ $last_name }}">
-                    <input type="hidden" name="email" value="{{ $email }}">
-                    <input type="hidden" name="password" value="{{ $password }}">
-                    <input type="hidden" name="password_confirmation" value="{{ $password_confirmation }}">
+                    <input type="hidden" name="first_name" value="{{ Session::get('first_name')}}">
+                    <input type="hidden" name="last_name" value="{{ Session::get('last_name') }}">
+                    <input type="hidden" name="email" value="{{ Session::get('email') }}">
+                    <input type="hidden" name="password" value="{{ Session::get('password') }}">
+                    <input type="hidden" name="password_confirmation" value="{{ Session::get('password_confirmation') }}">
                     <input type="hidden" name="verify_key" value="{{ $verify_key }}">
 
                     <label for="tgl-lahir">Tanggal Lahir</label>
-                    <input class="width-335  p-kiri-35" type="date" name="tgl_lahir" id="" required>
+                    <input class="width-335  p-kiri-35" type="date" name="tgl_lahir" id="" required value="{{ old('tgl_lahir') }}">
                     <label for="tmp-lahir">Tempat Lahir</label>
-                <input class="width-335  p-kiri-35 capitalize {{ ($errors->has('tmp_lahir'))?'warnaplaceholder':'' }}" type="text" name="tmp_lahir" placeholder="DKI Jakarta" required>
-                    <div class="merah rlt" style="top: -15px;" >{{ ($errors->has('tmp_lahir'))?$errors->first('tmp_lahir'):'' }}</div>
+                    <input class="width-335  p-kiri-35 {{ ($errors->has('tmp_lahir'))?'warnaplaceholder':'' }}" type="text" name="tmp_lahir" placeholder="DKI Jakarta" required value="{{ old('tmp_lahir') }}">
+                    <div class="merah">{{ ($errors->has('tmp_lahir'))?$errors->first('tmp_lahir'):'' }}</div>
 
                     <div class="f-kiri width-160">
                         <label for="kota red inline-block">Kota</label>
-                        <input class="center width-160 capitalize{{ ($errors->has('kota'))?'warnaplaceholder':'' }}" type="text" name="kota" id="" placeholder="Kota" required>
+                        <input class="center width-160 {{ ($errors->has('kota'))?'warnaplaceholder':'' }}" type="text" name="kota" id="" placeholder="Kota" required value="{{ old('kota') }}">
                     </div>
 
                     <div class="f-kanan width-160">
                         <label for="negara red inline-block">Negara</label>
-                        <select class="width-160 center" name="negara" id="" >
+                        <select class="width-120 center" name="negara" id="" >
 
                             @foreach ($countries as $country)
                             <option value="{{ $country->value }}">{{ $country->value }}</option>
@@ -153,12 +153,12 @@
                             <option value="jepang">Jepang</option> --}}
                         </select>
                     </div>
-                    <div class="merah abs" style="bottom: 290px;">{{ ($errors->has('kota'))?$errors->first('kota'):'' }}</div>
+                    <div class="merah">{{ ($errors->has('kota'))?$errors->first('kota'):'' }}</div>
 
                     <div class="merah">{{ ($errors->has('negara'))?$errors->first('negara'):'' }}</div>
                     
                     <div class="phone">
-                        <label for="tgl-lahir" class="rlt m-atas-20" style="right: 160px;">Phone</label>
+                        <label for="tgl-lahir">Phone</label>
                         <br>
                         <select class="width-120 center" name="negara_phone" id="" >
 
@@ -170,14 +170,14 @@
                             {{-- <option value="indonesia">indonesia</option>
                             <option value="jepang">Jepang</option> --}}
                         </select>
-                        <input class="center width-210" type="number" placeholder=" Phone Number" name="phone" required>
+                        <input class="center width-210" type="number" placeholder=" Phone Number" name="phone" required value="{{ old('phone') }}">
                     </div>
 
                  
 
                     <label for="gender">Gender : </label>
                     <div class="inline-block ">
-                        <input id="Male" type="radio" name="gender" value="Male">
+                        <input id="Male" type="radio" name="gender" value="Male" checked="checked">
                         <label  for="Male"><span ><span></span></span>Male</label>
                     </div>
                     <div class="inline-block">
@@ -215,7 +215,7 @@
 
     </div>
 
-    <?php if(isset($hasil)):?>
+    {{-- <?php if(isset($hasil)):?>
         <div class="main-container container-tengah p-20 p-bawah-20 head">
             <div class="head-container">
                 <div class="width-48 auto m-bawah-20">
@@ -235,8 +235,28 @@
 
     <?php exit; ?>
     
-    <?php endif; ?>
+    <?php endif; ?> --}}
 
+
+
+    @if (Session::has('hasil'))
+        <div class="main-container container-tengah p-20 p-bawah-20 head">
+            <div class="head-container">
+                <div class="width-48 auto m-bawah-20">
+                    <img class="widht-48 height-48 m-atas-20" src="assets/img/ceklis.png" alt="">
+                </div>
+                <div class="font-24 m-bawah-20 sukses center">Registration Succesfully</div>
+                <div class="center">We have sent confirmation to your email </div>
+                <div class="center m-bawah-20">please check your email to confrim</div>
+                <!-- <div class="modal-footer"> -->
+                <div class="width-335 auto">
+                    <a href="/newlogin"> <button onclick=window.location(login)
+                            class="width-335 height-30" style="border-radius: 14px;">LOGIN</button></>
+                    </a>
+                </div>
+            </div>
+        </div>
+    @endif
     
 
 
