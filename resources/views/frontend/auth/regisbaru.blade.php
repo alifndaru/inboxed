@@ -101,6 +101,9 @@
                 <label class="m-bawah-5 inline-block" for="password">Password</label>
                 <input type="password" class = "wid-inp p-kiri-35 {{ ($errors->has('password'))?'warnaplaceholder':'' }}" placeholder = "Password"name="password" id="password" required />
                 <i class="fas fa-eye" id="togglePassword"></i>
+
+                <p class="font-12" style="margin-top: -10px;">Use 8 or more characters with a mix of letters, numbers & symbols</p> <br>
+
             </div> 
             
             @if ($errors->has('password'))
@@ -120,7 +123,7 @@
           
             <div class="password_confirmation">
                 <label class="m-bawah-5 inline-block" for="confirmed_password">Confirmed Password</label>
-                <input type="password" class = "wid-inp p-kiri-35 {{ ($errors->has('password_confirmation')) ? 'warnaplaceholder':'' }}" placeholder = "Confirmed Password" name="password" id="password_confirmation" required />
+                <input type="password" class = "wid-inp p-kiri-35 {{ ($errors->has('password')) ? 'warnaplaceholder':'' }}" placeholder = "Confirmed Password" name="password_confirmation" id="password_confirmation" required />
                 <i class="fas fa-eye" id="togglePassword_confirmation"></i>
             </div>
             

@@ -161,6 +161,7 @@ class NewRegisterController extends Controller
             [
                 'g-recaptcha-response.required' => __('validation.attributes.frontend.captcha'),
             ]);    
+
         if ($validator->passes()) {
             // Store your user in database
             // return view('frontend.auth.regisbaru2',[
@@ -178,7 +179,8 @@ class NewRegisterController extends Controller
                 'password_confirmation' => $request->password_confirmation
             ]);
             
-        }
+        };
+
         return Redirect::back()->withInput()->withErrors($validator->errors());
     }
 

@@ -338,7 +338,7 @@ input[type=radio]:not(old):checked+label>span>span {
                             <div class="font-12 m-bawah-30">*File Berbentuk PDF/JPEG </div>
 
                             <!-- ========== UPLOAD Ijazah S2 ========== -->
-                            <div class="d-none" id="u-S2">
+                            {{-- <div class="d-none" id="u-S2">
 
                                 <input class="m-bawah-10 {{ ($errors->has('file_bukti_pembayaran'))?'warnaplaceholder':'' }}" id="file-uploadS2" onchange="getFileNameS2(this)" type="file" name="file_bukti_pembayaran" />
                                 
@@ -356,7 +356,7 @@ input[type=radio]:not(old):checked+label>span>span {
                                     <div class="merah">{{ ($errors->has('file_bukti_pembayaran'))?$errors->first('file_bukti_pembayaran'):'' }}</div>
                                 </label>
                                 <div class="font-12 m-bawah-30">*File Berbentuk PDF/JPEG </div>
-                            </div>
+                            </div> --}}
 
                             <div class="center">
                                 @if(Session::has('hasil'))
