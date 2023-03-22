@@ -12,3 +12,7 @@ a.forgot{
     text-decoration-color:#1a1a20 ;
     text-decoration: underline;
 }
+#close{
+    cursor: pointer;
+    margin-right: 200px;
+}
