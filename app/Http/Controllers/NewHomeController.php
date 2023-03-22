@@ -5,20 +5,25 @@ namespace App\Http\Controllers;
 use App\Models\Course;
 use App\Models\Bundle;
 use App\Models\auth\User;
+// use App\Models\BundleCourses;
 
 use App\Models\NewHome;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 
 class NewHomeController extends Controller
 {
     public function index()
     {
+        
         $bundle = Bundle::where('popular','=',0)->where('published','=',1)->get();
         $course = Course::where('popular','=',1)->where('published','=',1)->get();
+        $category = Category::where('status','=','1')->get();
         $teacher = User::role('teacher')->get();
 
-        return view('frontend.newIndex', compact('bundle' , 'course', 'teacher'));
+
+        return view('frontend.newIndex', compact('bundle' , 'course', 'teacher', 'category));
     }
 
     public function showCourse(Request $request)

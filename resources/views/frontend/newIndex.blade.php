@@ -207,14 +207,15 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10; color:#E7F6F2;"> Cara Mengelola Keuangan Untuk Millenial  </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10; color:#E7F6F2;"> Cara Mengelola Keuangan
+Untuk Millenial  </div>
                                 <div class="font-12 m-kiri-10"> Instructure : </div>
                                 <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
                                 <!-- =================  TANGGAL-PRODUK  =============== -->
                                 <div class="kalender">
                                     <img class="kalender" src="assets/img/kalender.png" alt="">
-                                    <div class="font-18">24 April 2022</div>
+                                    <div class="font-18">24 April 222</div>
                                 </div>
                                 <div class="alarm m-negativ">
                                     <img class="alarm m-negativ" src="assets/img/alarm.png" alt="">
@@ -236,38 +237,8 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10; color:#E7F6F2;"> Cara Mengelola Keuangan Untuk Millenial  </div>
-                                <div class="font-12 m-kiri-10"> Instructure : </div>
-                                <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
-    
-                                <!-- =================  TANGGAL-PRODUK  =============== -->
-                                <div class="kalender">
-                                    <img class="kalender" src="assets/img/kalender.png" alt="">
-                                    <div class="font-18">24 April 2022</div>
-                                </div>
-                                <div class="alarm m-negativ">
-                                    <img class="alarm m-negativ" src="assets/img/alarm.png" alt="">
-                                    <div class="font-18">13.00 - 16.00 WIB</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- slider  -->
-                    <!-- slider  -->
-                    <div class="auto">
-                        <div class="produk putih left">
-                            <div class="gambar-produk">
-                                <img class="foto-produk m-bawah-10" src="assets/img/foto-produk.png" alt="">
-                                <a href="#">
-                                    <div class="detail">Webinar Detail
-                                        <img src="assets/img/next2.png" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- =================  JUDUL-PRODUK  =============== -->
-                            <div class="judul-produk">
-    
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10; color:#E7F6F2;"> Cara Mengelola Keuangan Untuk Millenial  </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10; color:#E7F6F2;`"> Cara Mengelola Keuangan
+Untuk Millenial  </div>
                                 <div class="font-12 m-kiri-10"> Instructure : </div>
                                 <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
@@ -298,7 +269,8 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10; color:#E7F6F2;"> Cara Mengelola Keuangan Untuk Millenial  </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;  color:#E7F6F2;"> Cara Mengelola Keuangan
+Untuk Millenial  </div>
                                 <div class="font-12 m-kiri-10"> Instructure : </div>
                                 <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
@@ -329,7 +301,8 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10; color:#E7F6F2;"> Cara Mengelola Keuangan Untuk Millenial  </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;  color:#E7F6F2;"> Cara Mengelola Keuangan
+Untuk Millenial  </div>
                                 <div class="font-12 m-kiri-10"> Instructure : </div>
                                 <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
@@ -360,7 +333,8 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10; color:#E7F6F2;"> Cara Mengelola Keuangan Untuk Millenial  </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;  color:#E7F6F2;"> Cara Mengelola Keuangan
+Untuk Millenial  </div>
                                 <div class="font-12 m-kiri-10"> Instructure : </div>
                                 <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
@@ -391,7 +365,40 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
     
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10; color:#E7F6F2;"> Cara Mengelola Keuangan Untuk Millenial  </div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;  color:#E7F6F2;"> Cara Mengelola Keuangan
+Untuk Millenial</div>
+                                <div class="font-12 m-kiri-10"> Instructure : </div>
+                                <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
+    
+                                <!-- =================  TANGGAL-PRODUK  =============== -->
+                                <div class="kalender">
+                                    <img class="kalender" src="assets/img/kalender.png" alt="">
+                                    <div class="font-18">24 April 2022</div>
+                                </div>
+                                <div class="alarm m-negativ">
+                                    <img class="alarm m-negativ" src="assets/img/alarm.png" alt="">
+                                    <div class="font-18">13.00 - 16.00 WIB</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider  -->
+                    <!-- slider  -->
+                    <div class="auto">
+                        <div class="produk putih left">
+                            <div class="gambar-produk">
+                                <img class="foto-produk m-bawah-10" src="assets/img/foto-produk.png" alt="">
+                                <a href="#">
+                                    <div class="detail">Webinar Detail
+                                        <img src="assets/img/next2.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- =================  JUDUL-PRODUK  =============== -->
+                            <div class="judul-produk">
+    
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10;  color:#E7F6F2;"> Cara Mengelola Keuangan
+Untuk Millenial  </div>
                                 <div class="font-12 m-kiri-10"> Instructure : </div>
                                 <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
     
@@ -460,8 +467,11 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
                                 <div class="font-18 width-232 m-kiri-10 m-bawah-20 height-60">{{ $c->title }}</div>
-                                    <div class="font-9 m-kiri-10"> instructur : </div>
-                                    <div class="font-9 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>
+                                <!-- <div class="font-18 width-232 m-kiri-10 m-bawah-20 red height-70">Lorem15</div> -->
+                                <!-- <div class="abs index-2 red"> -->
+                                    
+                                    <div class="font-12 m-kiri-10"> Instructure : </div>
+                                    <div class="font-12 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>
                                     
                                     <!-- =================  HARGA-PRODUK  =============== -->
                                     <div class="container-harga-home auto">
@@ -521,8 +531,8 @@
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
                                 <div class="font-18 width-232 m-kiri-10 m-bawah-20">{{ $b->title }}</div>
-                                <div class="font-9 m-kiri-10"> instructur : </div>
-                                <div class="font-9 width-232 m-kiri-10">{{ $b->courses[0]->teachers[0]->first_name}} {{ $b->courses[0]->teachers[0]->last_name}}</div>
+                                <div class="font-12 m-kiri-10"> Instructure : </div>
+                                <div class="font-12 width-232 m-kiri-10">{{ $b->courses[0]->teachers[0]->first_name}} {{ $b->courses[0]->teachers[0]->last_name}}</div>
     
                                 <!-- =================  HARGA-PRODUK  =============== -->
                                 <div class="container-harga-home auto">
@@ -548,7 +558,18 @@
                 <button class="search-button right-622">Search</button>
             </div>
             <div class="font-36 m-bawah-25">Or Choose Category</div>
-    
+
+            <div class="kategori">
+                @foreach($category as $c)
+                <a href="#">
+                    <div class="container-category p-atas-25">
+                        <div class="{{$c->icon}} fa-2x" style="margin-bottom: 20px;"></div>
+                        <div class="font-18 ">{{$c->name}}</div>
+                    </div>
+                </a>
+                @endforeach
+            </div>
+
             <div class="kategori">
                 <a href="">
                     <div class="container-category p-atas-25">
@@ -640,7 +661,7 @@
                                         <!-- PROFILE PENGAJAR - NAMA -->
                                         Dr. Ir. Muhammad Fadhil Darussalam M.phD
                                         <br> <br>
-                                        Instructure
+                                        Instructuree
     
                                     </div>
                                 </div>
