@@ -104,6 +104,8 @@
     @stack('before-scripts')
 
     <!-- For Js Library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="{{asset('assets/js/jquery-2.1.4.min.js')}}"></script>
     <script src="{{asset('assets/js/popper.min.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
@@ -151,6 +153,70 @@
                 @endif
         var font_color = "{{config('font_color')}}"
         setActiveStyleSheet(font_color);
+    </script>
+    <script>
+        $('#search-course').on('keyup', function(){
+                searchCourse();
+            });
+            function searchCourse() {
+                var keyword = $('#search-course').val();
+                $.post('{{ route("course.search") }}',{
+                    _token: $('meta[name="csrf-token"]').attr('content'),keyword:keyword
+                },function(data) {
+                    cardCourses(data);          
+                        console.log(data);
+                });
+            }
+
+        //ajax
+        function cardCourses(res) {
+            let htmlView = '';
+            if (res.courses.length <= 0) {
+                htmlView+= `<p>No data course</p>`
+            }
+            for( let i = 0; i<res.courses.length; i++){
+                htmlView+= 
+                    `
+                    <div id="course-search" class="Product-Home">
+                    <div class="m-bawah-10">
+                        <div class="produk putih left">
+                            <div class="gambar-produk">
+                                <div class="keterangan-produk">
+                                    <div class="value-keterangan-produk courses">COURSES</div>
+                                    @if(`+res.courses[i].free+` == 1)
+                                    <div class="value-keterangan-produk free">FREE</div>
+                                    @endif
+                                </div>
+                                <img class="foto-produk m-bawah-10" src="assets/img/foto-produk-2.png" alt="">
+                                <a href="course/`+res.courses[i].slug+`">
+                                    <div class="detail">
+                                        Course Detail
+                                        <img src="assets/img/next2.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+    
+                            <!-- =================  JUDUL-PRODUK  =============== -->
+                            <div class="judul-produk">
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 height-60">`+res.courses[i].title+`</div>
+                                    <div class="font-9 m-kiri-10"> instructur : </div>
+                                    <div class="font-9 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>
+                                    <div class="font-9 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>
+                                    
+                                    <!-- =================  HARGA-PRODUK  =============== -->
+                                    <div class="container-harga-home auto">
+                                        <div class="diskon inline-block">{{$appCurrency['symbol']}} {{ $c->price }}</div>
+                                        <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div>
+                                            <br> rating :
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    `
+            }
+            $('#course-search').html(htmlView);
+        }
     </script>
 
     @yield('js')

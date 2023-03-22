@@ -16,22 +16,25 @@ class NewHomeController extends Controller
 {
     public function index()
     {
-        // $teacher = NewHome::select('*')
-        //     ->get();
-        // return view('frontend.newIndex', ['teach' => $teacher]);
-
-        // return view('frontend.auth.newhome');
-
-        return view('frontend.newIndex')->with([
-
-
-            'course'=>Course::where('popular','=',1)->where('published','=',1)->get(),
-            'bundle'=>Bundle::where('popular','=',1)->where('published','=',1)->get(),
-            'teacher'=>User::role('teacher')->get(),
-            'category'=> Category::where('status','=','1')->get()
         
+        $bundle = Bundle::where('popular','=',0)->where('published','=',1)->get();
+        $course = Course::where('popular','=',1)->where('published','=',1)->get();
+        $category = Category::where('status','=','1')->get();
+        $teacher = User::role('teacher')->get();
 
 
+        return view('frontend.newIndex', compact('bundle' , 'course', 'teacher', 'category));
+    }
+
+    public function showCourse(Request $request)
+    {
+        $courseAll = Course::all();
+        // dd($courseAll);
+        if ($request->keyword != '') {
+            $courseAll = Course::where('title', 'LIKE', '%'.$request->keyword.'%')->get();
+        }
+        return response()->json([
+            'courses' => $courseAll
         ]);
     }
 }

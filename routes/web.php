@@ -81,6 +81,11 @@ Route::post('/regisikadin4', 'AdvokatController@store')-> name('regisikadin4');
 //homepage
 Route::get('/', 'NewHomeController@index')-> name('index');
 
+//search
+Route::post('/course/search', 'NewHomeController@showCourse')->name('course.search');
+
+
+
 // Questioner
 Route::get('/quesioner', 'QuesionerController@index')->name('quesioner');
 Route::get('/quesioner-pg', 'QuesionerController@quesioner_pg')->name('quesioner-pg');

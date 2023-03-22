@@ -224,8 +224,6 @@ Untuk Millenial  </div>
                             </div>
                         </div>
                     </div>
-                    <!-- slider  -->
-                    <!-- slider  -->
                     <div class="auto">
                         <div class="produk putih left">
                             <div class="gambar-produk">
@@ -438,14 +436,14 @@ Untuk Millenial  </div>
                     <button class="logo-search-produk index-1" style="font-size: 0.5rem;" type="submit">
                         <i class="fa fa-search fa-3x"></i>
                     </button>
-                    <input class="font-18 search-produk" type="search" placeholder="Search" name="" id="">
+                    <input class="font-18 search-produk" type="search" placeholder="Search" name="" id="search-course">
                 </div>
             </div> <!-- JUDUL -->
             <div class="center">
     
                 <!-- =================  PRODUK-1  =============== -->
                 <!-- Slider container -->
-                <div id="Product-Home" class="Product-Home">
+                <div id="course-search" class="Product-Home">
                     <!-- slider -->
                     @foreach ($course as $c)
                     <div class="m-bawah-10">
@@ -477,13 +475,10 @@ Untuk Millenial  </div>
                                     
                                     <!-- =================  HARGA-PRODUK  =============== -->
                                     <div class="container-harga-home auto">
-                                        <div class="diskon inline-block">Rp. {{ $c->price }}</div>
-                                        <div class="harga inline-block">Rp. {{ $c->strike }}</div>
-                                        <!-- <div class="rating"> -->
+                                        <div class="diskon inline-block">{{$appCurrency['symbol']}} {{ $c->price }}</div>
+                                        <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div>
                                             <br> rating :
-                                            <!-- </div> -->
                                     </div>
-                                <!-- </div> -->
                             </div>
                         </div>
                     </div>
@@ -505,7 +500,7 @@ Untuk Millenial  </div>
                     <button class="logo-search-produk index-1" style="font-size: 0.5rem;" type="submit">
                         <i class="fa fa-search fa-3x"></i>
                     </button>
-                    <input class="font-18 search-produk" type="search" placeholder="Search" name="" id="">
+                    <input class="font-18 search-produk" type="search" placeholder="Search" name="" id="search">
                 </div>
             </div> <!-- JUDUL -->
             <div class="center">
