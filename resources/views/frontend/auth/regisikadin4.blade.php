@@ -398,7 +398,7 @@ input[type=radio]:not(old):checked+label>span>span {
                             </div> --}}
                             <div class="width-335 auto">
                                 <a href="/">
-                                    <input type="submit" class="center width-335" value="SUBMIT">
+                                    <input type="submit" class="center width-335 hvr" value="SUBMIT">
                                 </a>
                             </div>
                         </div>

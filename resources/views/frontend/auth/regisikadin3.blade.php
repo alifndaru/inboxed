@@ -13,10 +13,15 @@
     <title>Registrasi</title>
     <link rel="stylesheet" href="assets/css/frontend.css">
     <link rel="stylesheet" href="assets/css/ukuran.css">
+    <link rel="stylesheet" href="assets/css/detailing.css">
     <link rel="stylesheet" href="assets/css/new.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <style>
+
+body{
+    font-family: 'Lexend', sans-serif, serif;
+}
 
 .kembalasi {
     background-image: url(../img/back.png);
@@ -58,7 +63,7 @@
     display: inline-block;
     box-sizing: border-box;
     margin-left: 15px;
-    ;
+    
 }
 
 .langkah-verifikasi .langkah .judul-langkah {
@@ -143,7 +148,7 @@
 
         <div class="langkah-verifikasi">
             <div class="langkah">
-                <div class="judul-langkah">Langkah 1</div>
+                <div class="judul-langkah bold" style="color:#FFFFFF;">Langkah 1</div>
                 <div class="judul">ISI DATA DIRI ANDA</div>
                 <div class="gambar-langkah">
                     <img src="assets/img/Sign Up form.png" alt="">
@@ -157,7 +162,7 @@
                 </div>
             </div>
             <div class="langkah">
-                <div class="judul-langkah">Langkah 2</div>
+                <div class="judul-langkah bold" style="color:#FFFFFF;">Langkah 2</div>
                 <div class="judul">UPLOAD BERKAS</div>
                 <div class="gambar-langkah">
                     <img src="assets/img/slow loading.png" alt="">
@@ -173,7 +178,7 @@
                 </div>
             </div>
             <div class="langkah">
-                <div class="judul-langkah">Langkah 3</div>
+                <div class="judul-langkah bold" style="color:#FFFFFF;">Langkah 3</div>
                 <div class="judul ">DATA DIVALIDASI</div>
                 <div class="gambar-langkah">
                     <img src="assets/img/woman checking received email on phone.png" alt="">
@@ -192,11 +197,10 @@
 
         <div class="center">
             <a href="/regisikadin2">
-                <input type="submit" class="center width-400" value="MULAI PENDAFTARAN" style="margin-top:30px; margin-left:30px;">
+                <input type="submit" class="center wid-inp-6 font-18 hvr" value="Mulai Pendaftaran" style="margin-top:30px; margin-left:30px; height:30px;">
             </a>
         </div>
     </div><!-- MAIN CONTAINER -->
     @endsection
 </body>
-
 </html>
