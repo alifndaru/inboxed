@@ -383,7 +383,7 @@ input[type=radio]:not(old):checked+label>span>span {
                             <div class="font-12 m-bawah-30">*File Berbentuk PDF/JPEG </div>
                         </div> --}}
 
-                        ini nanti anjay
+                        {{-- ini nanti anjay --}}
                         @endif
 
                             <div class="center">
