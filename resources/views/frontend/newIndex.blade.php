@@ -464,8 +464,10 @@
                                     <div class="font-12 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>                                    
                                     <!-- =================  HARGA-PRODUK  =============== -->
                                     <div class="container-harga-home auto">
-                                        <div class="diskon inline-block">{{$appCurrency['symbol']}} {{ $c->price }}</div>
-                                        <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div>
+                                        {{-- <div class="diskon inline-block">{{$appCurrency['symbol']}} {{ $c->price }}</div> --}}
+                                        {{-- <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div> --}}
+                                         <div class="diskon inline-block">@rupiah($c->price)</div>
+                                            <div class="harga inline-block">@rupiah($c->strike)</div>
                                             <br> rating :
                                     </div>
                             </div>

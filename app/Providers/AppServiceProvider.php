@@ -21,6 +21,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use App\Resolvers\SocialUserResolver;
 use Coderello\SocialGrant\Resolvers\SocialUserResolverInterface;
+use Illuminate\Support\Facades\Blade;
 
 /**
  * Class AppServiceProvider.
@@ -51,6 +52,9 @@ class AppServiceProvider extends ServiceProvider
          */
         setlocale(LC_TIME, config('app.locale_php'));
 
+        Blade::directive('rupiah', function ( $expression ) {
+             return "Rp. <?php echo number_format($expression,0,',','.'); ?>"; 
+        });
 
         /*
          * Set the session variable for whether or not the app is using RTL support

@@ -87,7 +87,7 @@
                         </tr>
                         <tr>
                             <th>@lang('labels.backend.courses.fields.price')</th>
-                            <td>{{ ($course->free == 1) ? trans('labels.backend.courses.fields.free') : $course->price.' '.$appCurrency['symbol'] }}</td>
+                            <td>{{ ($course->free == 1) ? trans('labels.backend.courses.fields.free') : $appCurrency['symbol'].' '.$course->price }}</td>
                         </tr>
                         <tr>
                             <th>@lang('labels.backend.courses.fields.course_image')</th>

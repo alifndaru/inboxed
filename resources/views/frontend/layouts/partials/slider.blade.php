@@ -2,10 +2,6 @@
     <div id="slider-item" class="slider-item-details">
         @foreach($slides as $slide)
             <div class="slider-area slider-bg-5 relative-position" style="background: none;">
-
-                {{-- <div class="bg-image @if($slide->overlay == 1) overlay  @endif"
-                     style="background-image: url({{asset('storage/uploads/'.$slide->bg_image)}})">
-                </div> --}}
                 <div class="bg-image @if($slide->overlay == 1) overlay  @endif"
                     style="background-image: url({{asset('storage/uploads/'.$slide->bg_image)}})">
                </div>
