@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registrasi</title>
-
+    <link rel="stylesheet" href="assets/css/detailing.css">
     <link rel="stylesheet" href="assets/css/frontend.css">
     <link rel="stylesheet" href="assets/css/new.css">
     <link rel="stylesheet" href="assets/css/ukuran.css">
@@ -218,6 +218,7 @@ yang diberikan. </div>
                     <div class="pendidikan m-atas-50" >
 
                         <label class="bold font-36 p-atas-40" style="margin-left: -20px;" for="pendidikan">Pendidikan</label> <br>
+                        <hr align="left" color="white" width="740"> 
 
                     <label for="universitas">Universitas*</label>
                     <input class="width-745 p-kiri-20 {{ ($errors->has('universitas'))?'warnaplaceholder':'' }}" type="text" name="universitas" required value="{{ old('universitas') }}">
@@ -246,7 +247,7 @@ yang diberikan. </div>
                     </div>
                     <input onclick='addInput()' type="button" style=" border: groove; background: none; font-weight:normal; color: #fff;" class="width-230" value="+ Tambah Pendidikan">
 
-                    <button  type="submit" class="center width-400 bold" style="margin-top:100px; margin-left:190px; border-radius: 12px; line-height: 12px;">NEXT</button>
+                    <button  type="submit" class="center wid-inp-6 font-18 hvr" style="margin-top:100px; margin-left:190px; border-radius: 12px; line-height: 12px; height:30px; ">Next</button>
                 </form>
             </div>
 
@@ -266,7 +267,7 @@ yang diberikan. </div>
                     }
                     
                     localStorage.setItem('Upload-S2', inputCount);
-                    var dummy = '<br><br><br><div class="pendidikan m-atas-50" id="input-cont"> <label for="universitas'+inputCount+'">Universitas'+inputCount+'*</label><input class="width-745 p-kiri-20 {{ ($errors->has("universitas'+inputCount+'"))?'warnaplaceholder':'' }}" type="text" name="universitas'+inputCount+'"> <div class="merah">{{ ($errors->has("universitas'+inputCount+'"))?$errors->first("universitas'+inputCount+'"):'' }}</div> <label for="program_studi'+inputCount+'">Program Studi*</label><input class="width-745 p-kiri-20 {{ ($errors->has("program_studi'+inputCount+'"))?'warnaplaceholder':'' }}" type="text" name="program_studi'+inputCount+'"><div class="merah">{{ ($errors->has("program_studi'+inputCount+'"))?$errors->first("program_studi'+inputCount+'"):'' }}</div><div class="f-kiri width-140"><label for="universitas'+inputCount+' inline-block">Tahun Kelulusan*</label><input class="center width-200 {{ ($errors->has("tahun_kelulusan'+inputCount+'"))?'warnaplaceholder':'' }}" name="tahun_kelulusan'+inputCount+'" id="" type="number" min="1900" max="2023" step="1" placeholder="yyyy - yyyy"></div> <div class="merah">{{ ($errors->has("tahun_kelulusan'+inputCount+'"))?$errors->first("tahun_kelulusan'+inputCount+'"):'' }}</div> <div class="f-kiri width-10" style="position: relative; left:70px;"><label for="universitas'+inputCount+' inline-block width-10" >IPK*</label><input class="center width-150" type="text" name="ipk'+inputCount+'" id="" placeholder="0.00/4.00"></div><div class="f-kiri width-200" style="position:absolute; margin-left:370px"><label for="universitas'+inputCount+' inline-block">Nomor Ijazah*</label><input class="center width-375 {{ ($errors->has("no_ijazah'+inputCount+'"))?'warnaplaceholder':'' }}" type="text" name="no_ijazah'+inputCount+'" id="" placeholder="118933-H4-D/13419-411-2009"></div> <div class="merah">{{ ($errors->has("no_ijazah'+inputCount+'"))?$errors->first("no_ijazah'+inputCount+'"):'' }}</div></div>';
+                    var dummy = '<br><br><br><div class="pendidikan m-atas-50" id="input-cont"> <label for="universitas'+inputCount+'">Universitas'+inputCount+'</label><input class="width-745 p-kiri-20 {{ ($errors->has("universitas'+inputCount+'"))?'warnaplaceholder':'' }}" type="text" name="universitas'+inputCount+'"> <div class="merah">{{ ($errors->has("universitas'+inputCount+'"))?$errors->first("universitas'+inputCount+'"):'' }}</div> <label for="program_studi'+inputCount+'">Program Studi</label><input class="width-745 p-kiri-20 {{ ($errors->has("program_studi'+inputCount+'"))?'warnaplaceholder':'' }}" type="text" name="program_studi'+inputCount+'"><div class="merah">{{ ($errors->has("program_studi'+inputCount+'"))?$errors->first("program_studi'+inputCount+'"):'' }}</div><div class="f-kiri width-140"><label for="universitas'+inputCount+' inline-block">Tahun Kelulusan*</label><input class="center width-200 {{ ($errors->has("tahun_kelulusan'+inputCount+'"))?'warnaplaceholder':'' }}" name="tahun_kelulusan'+inputCount+'" id="" type="number" min="1900" max="2023" step="1" placeholder="yyyy - yyyy"></div> <div class="merah">{{ ($errors->has("tahun_kelulusan'+inputCount+'"))?$errors->first("tahun_kelulusan'+inputCount+'"):'' }}</div> <div class="f-kiri width-10" style="position: relative; left:70px;"><label for="universitas'+inputCount+' inline-block width-10" >IPK*</label><input class="center width-150" type="text" name="ipk'+inputCount+'" id="" placeholder="0.00/4.00"></div><div class="f-kiri width-200" style="position:absolute; margin-left:370px"><label for="universitas'+inputCount+' inline-block">Nomor Ijazah*</label><input class="center width-375 {{ ($errors->has("no_ijazah'+inputCount+'"))?'warnaplaceholder':'' }}" type="text" name="no_ijazah'+inputCount+'" id="" placeholder="118933-H4-D/13419-411-2009"></div> <div class="merah">{{ ($errors->has("no_ijazah'+inputCount+'"))?$errors->first("no_ijazah'+inputCount+'"):'' }}</div></div>';
                     document.getElementById('input-cont').innerHTML += dummy;
 
                     

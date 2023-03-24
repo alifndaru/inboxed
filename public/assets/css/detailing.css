@@ -18,3 +18,9 @@ a.forgot{
     cursor: pointer;
     margin-right: 200px;
 }
+
+
+.hvr:hover{
+    background-color: #ffffff;
+    color: #2D3260;
+}

@@ -1,5 +1,4 @@
 @extends('frontend.layouts.app'.config('theme_layout'))
-
 @section('title', trans('labels.frontend.home.title').' | '.app_name())
 @section('meta_description', '')
 @section('meta_keywords','')
@@ -14,6 +13,7 @@
 
     <link rel="stylesheet" href="assets/css/frontend.css">
     <link rel="stylesheet" href="assets/css/new.css">
+    <link rel="stylesheet" href="assets/css/detailing.css">
     {{-- <link rel="stylesheet" href="assets/css/regisikadin.css"> --}}
     <link rel="stylesheet" href="assets/css/ukuran.css">
     <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
@@ -29,14 +29,14 @@
         }
 
         .search-wrapper {
-    position: relative;
-}
+            position: relative;
+        }
 
-.search-wrapper img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
+        .search-wrapper img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
 
 .main-menu-container{
     background-color: black;
@@ -108,8 +108,8 @@
                                     href="https://dppikadin.or.id">https://dppikadin.or.id</a> </p>
                         </div>
                         <a href="/regisikadin3">
-                        <input type="button" class="center wid-inp-6 "
-                            style="position: absolute; margin-left:260px; " value="NEXT">
+                        <input type="button" class="center wid-inp-6 m-atas-20 font-18 hvr"
+                            style="position: absolute; margin-left:260px; height:30px;" value="Next">
                         </a>
                     </form>
 
