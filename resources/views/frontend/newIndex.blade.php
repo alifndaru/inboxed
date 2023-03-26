@@ -480,7 +480,14 @@
                                         {{-- <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div> --}}
                                          <div class="diskon inline-block">@rupiah($c->price)</div>
                                             <div class="harga inline-block">@rupiah($c->strike)</div>
-                                            <br> rating :
+                                            <br> 
+                                            <div class="course-rate ul-li">
+                                                <ul>
+                                                    @for($i=1; $i<=(int)$c->rating; $i++)
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    @endfor
+                                                </ul>
+                                            </div>
                                     </div>
                             </div>
                         </div>

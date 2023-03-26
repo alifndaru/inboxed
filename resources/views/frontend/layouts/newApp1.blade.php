@@ -191,7 +191,7 @@
                                     @endif
                                 </div>
                                 <img class="foto-produk m-bawah-10" src="assets/img/foto-produk-2.png" alt="">
-                                <a href="course/{{ $c->slug }}">
+                                <a href="course/`+res.courses[i].slug+`">
                                     <div class="detail">
                                         Course Detail
                                         <img src="assets/img/next2.png" alt="">
@@ -201,7 +201,7 @@
     
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 height-60">{{ $c->title }}</div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 height-60">`+res.courses[i].title+`</div>
                                     <div class="font-9 m-kiri-10"> instructur : </div>
                                     <div class="font-12 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>                                    
                                     <!-- =================  HARGA-PRODUK  =============== -->
@@ -210,7 +210,14 @@
                                         {{-- <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div> --}}
                                          <div class="diskon inline-block">@rupiah($c->price)</div>
                                             <div class="harga inline-block">@rupiah($c->strike)</div>
-                                            <br> rating :
+                                            <br>
+                                            <div class="course-rate ul-li">
+                                                <ul>
+                                                    @for($i=1; $i<=(int)$c->rating; $i++)
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    @endfor
+                                                </ul>
+                                            </div>
                                     </div>
                             </div>
                         </div>
