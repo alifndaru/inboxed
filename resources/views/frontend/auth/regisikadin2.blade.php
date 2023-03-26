@@ -104,11 +104,11 @@ yang diberikan. </div>
                     </div>  
                     <label for="">Jenis Kelamin : </label>
                     <div class="inline-block ">
-                        <input id="Male" type="radio" name="jenis_kelamin" value="Male" checked="{{ ($user->gender == 'Male')?'"checked"':'' }}">
+                        <input id="Male" type="radio" name="jenis_kelamin" value="Male" {!! ($user->gender == 'Male')?'checked':''  !!}>
                         <label  for="Male"><span ><span></span></span>Laki</label>
                     </div>
                     <div class="inline-block " style="position: absolute;"> 
-                        <input id="Female" type="radio" name="jenis_kelamin" value="Female" checked="{{ ($user->gender == 'Female')?'"checked"':'' }}">
+                        <input id="Female" type="radio" name="jenis_kelamin" value="Female" {!! ($user->gender == 'Female')?'checked':''  !!}>
                         <label for="Female"><span><span></span></span>Perempuan</label>
                     </div>
                     <br>
@@ -138,7 +138,7 @@ yang diberikan. </div>
                     </div>
                     <div class="f-kiri width-10" style="position: relative; left:260px;">
                         <label for="kota inline-block width-160" >Kota*</label>
-                        <input class="p-kiri-20 width-260 {{ ($errors->has('kota'))?'warnaplaceholder':'' }}" type="text" name="kota" id="" placeholder="" required value="{{ old('kota') }}">
+                        <input class="p-kiri-20 width-260 {{ ($errors->has('kota'))?'warnaplaceholder':'' }}" type="text" name="kota" id="kota" placeholder="" required value="{{ old('kota') }}">
                         <div class="merah">{{ ($errors->has('kota'))?$errors->first('kota'):'' }}</div>
                     </div>
                     <div class="f-kiri width-100" style="position:absolute; margin-left:550px">
@@ -165,7 +165,7 @@ yang diberikan. </div>
                         </div>
                     </div>
 
-                    <input class="f-kiri" style="margin-top: 90px" type="checkbox" value="true" name="alamat_sesuaiktp">
+                    <input class="f-kiri" style="margin-top: 90px" type="checkbox" value="true" id="alamat_sesuaiktp" name="alamat_sesuaiktp" onclick="sesuai()">
                     <p class="centang p-kiri-45 width-600" style="margin-top: 83px; ">Centang Jika Informasi Sesuai Dengan Alamat Utama</p>
                     <hr align="left" color="white" width="740"> 
                
@@ -251,6 +251,8 @@ yang diberikan. </div>
                 </form>
             </div>
 
+            @php($kota = $user->kota)
+
             <script>
                 const container = document.getElementById('input-cont');
                 var maxInputAllowed = 5;
@@ -271,6 +273,17 @@ yang diberikan. </div>
                     document.getElementById('input-cont').innerHTML += dummy;
 
                     
+                }
+
+                function sesuai(){
+                    var checkBox = document.getElementById("alamat_sesuaiktp");
+                    var kota = {!! json_encode($kota) !!};
+
+                    if(checkBox.checked == true){
+                        document.getElementById("kota").value = kota ;
+                    }else{
+                        document.getElementById("kota").value = "" ;
+                    }
                 }
             </script>
 
