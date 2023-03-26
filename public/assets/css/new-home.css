@@ -330,6 +330,11 @@ input[type=radio]:not(old):checked+label>span>span {
 }
 
 .detail{
+    display: none;
+}
+
+.produk-det:hover .detail{
+    display: inline-block;
     width: 113px;
     height: 29px;
     border-radius: 15px;
@@ -348,7 +353,7 @@ input[type=radio]:not(old):checked+label>span>span {
     float: right;
 }
 
-.detail img{
+.produk-det:hover .detail img{
     display: inline-block;
     width: 5px;
     float: right;
@@ -377,6 +382,41 @@ input[type=radio]:not(old):checked+label>span>span {
     font-size: 18px;
     /* padding-top: 15px;  */
 }
+
+.ket-bundle{
+    /* width: 90%;
+    background-color: red;
+    margin-top: 15px;
+    height: 40px; */
+    margin-top: 15px;
+    display: grid;
+    height: 40px;
+    align-content: center;
+    /* background-color: red; */
+    /* padding-left: 10px; */
+    gap: 1px;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.ket-bundle > div{
+    text-align: center;
+    font-size: 12px;
+    /* background-color: #13DB63; */
+    margin: auto;
+    /* background: #000; */
+}
+
+.ket-bundle > .ket-bundle-popular{
+    width: 80px;
+    /* text-align: center; */
+}
+
+.ket-bundle > .bundle-student-courses{
+    width: 80px;
+}
+
+
+
 
 /* NEXT-PRODUK */
 .next {
@@ -427,6 +467,10 @@ input[type=radio]:not(old):checked+label>span>span {
 
 .putih {
     color: white;
+}
+
+.putih-abu{
+    color: #E7F6F2;
 }
 
 .left {
@@ -640,6 +684,7 @@ input[type=radio]:not(old):checked+label>span>span {
     position: absolute;
     bottom: 120px;
     left: 160px;
+    border-radius: 10px;
 
 }
 
@@ -660,6 +705,7 @@ input[type=radio]:not(old):checked+label>span>span {
 .payment-home{
     /* background-color: red; */
     text-align: center;
+    width: 100%;
 }
 
 /* .gambar{
@@ -670,15 +716,21 @@ input[type=radio]:not(old):checked+label>span>span {
 
 .payment-home .gambar img {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
     text-align: center;
 }
 
-.payment-home .judul-payment{
+.payment-home .judul-payment div {
     color: black;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 40px;
+    width: 1000px;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .m-negativ{

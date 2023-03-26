@@ -142,7 +142,7 @@ Author:         HTMLMATE Team
                     loop: $(this).children().length > 1,
                     dots: true,
                     autoplay: false,
-                    navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+                    navText: ["<i class='fas fa-chevron-left fa-2x'></i>", "<i class='fas fa-chevron-right fa-2x'></i>"],
                     smartSpeed: 1000,
                     responsive: {
                         0: {

@@ -16,15 +16,18 @@
                     </div><!-- /.navbar-header -->
 
                     <div class="cart-search float-right ul-li">
-                        <ul>
-                            <li>
-                                <a href="{{route('cart.index')}}"><i class="fas fa-shopping-bag"></i>
+                        <!-- <ul>
+                            <li> -->
+                                <!-- SHOPING CART DISINI -->
+                                <a href="{{route('cart.index')}}">
+                                    <!-- <i class="fa fa-shopping-cart fa-lg" style="color: #ffffff; margin-top: 10px;"></i> -->
+                                <img class="shoping-cart-nav" src="assets/img/shop_cart.png" alt="">
                                     @if(auth()->check() && Cart::session(auth()->user()->id)->getTotalQuantity() != 0)
                                         <span class="badge badge-danger position-absolute">{{Cart::session(auth()->user()->id)->getTotalQuantity()}}</span>
                                     @endif
                                 </a>
-                            </li>
-                        </ul>
+                            <!-- </li>
+                        </ul> -->
                     </div>
 
 

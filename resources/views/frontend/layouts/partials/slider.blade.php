@@ -54,9 +54,9 @@
                     @if(isset($content->widget))
                         <div class="layer-1-3">
                             @if($content->widget->type == 1)
-                                <div class="search-course mb30 relative-position">
+                                <div class="search-course search-courses-slide mb30 relative-position">
                                     <form action="{{route('search')}}" method="get">
-                                        <input class="course" name="q" type="text"
+                                        <input class="course " name="q" type="text"
                                                placeholder="@lang('labels.frontend.layouts.partials.search_placeholder')">
                                         <div class="nws-button text-center  gradient-bg text-capitalize">
                                             <button type="submit" value="Submit">@lang('labels.frontend.layouts.partials.search_courses')</button>
@@ -72,9 +72,8 @@
                         <div class="layer-1-4">
                             <div class="about-btn text-center">
                                 @foreach($content->buttons as $button)
-                                    <div class="genius-btn text-center text-uppercase ul-li-block bold-font">
-                                        <a href="{{$button->link}}">{{$button->label}} <i
-                                                    class="fas fa-caret-right"></i></a>
+                                    <div class="genius-btn text-center ul-li-block bold-font">
+                                        <a style="font-size: 36px;" href="{{$button->link}}">{{$button->label}}</a>
                                     </div>
                                 @endforeach
                             </div>
