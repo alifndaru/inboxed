@@ -131,6 +131,11 @@
         top: 10%;
         right: -20%;
     }
+    .kat{
+        margin-top: 50px;
+        /* margin-bottom: 30px; */
+
+    }
     body{
         font-family: 'Lexend';
     }
@@ -536,7 +541,7 @@
     
                                 <!-- =================  HARGA-PRODUK  =============== -->
                                 <div class="container-harga-home auto">
-                                    <div class="harga">Rp. {{ $b->price }}</div>
+                                    <div class="harga">@rupiah($b->price)</div>
                                 </div>
                             </div>
                         </div>
@@ -599,7 +604,7 @@
     
     
         <!-- =================  CATEGORY  =============== -->
-        <div class="full-container-g center m-bawah-50 padding-10 hitam">
+        <div class="full-container-g center kat padding-10 hitam">
             <div class="font-36 m-bawah-25">Browse Courses</div>
             <div class="m-bawah-25">
                 <input class="search" type="search" placeholder="Type what do you want to learn today?" name="" id="">
@@ -617,71 +622,6 @@
                 </a>
                 @endforeach
             </div>
-    
-            <div class="kategori">
-                <a href="">
-                    <div class="container-category p-atas-25">
-                        <img src="assets/img/icon-kategori/IT.png" alt="">
-                        <div class="font-18 ">Technology Informasi</div>
-                    </div>
-                </a>
-    
-                <a href="#">
-                    <div class="container-category p-atas-25">
-                        <img src="assets/img/icon-kategori/law.png" alt="">
-                        <div class="font-18 ">Law</div>
-                    </div>
-                </a>
-    
-                <a href="#">
-                    <div class="container-category p-atas-25">
-                        <img src="assets/img/icon-kategori/management.png" alt="">
-                        <div class="font-18 ">Management</div>
-                    </div>
-                </a>
-    
-                <a href="#">
-                    <div class="container-category p-atas-25">
-                        <img src="assets/img/icon-kategori/human.png" alt="">
-                        <div class="font-18 ">Humanities</div>
-                    </div>
-                </a>
-    
-                <a href="#">
-                    <div class="container-category p-atas-25">
-                        <img src="assets/img/icon-kategori/engineer.png" alt="">
-                        <div class="font-18 ">Science & Engineering</div>
-                    </div>
-                </a>
-    
-                <a href="#">
-                    <div class="container-category p-atas-25">
-                        <img src="assets/img/icon-kategori/art.png" alt="">
-                        <div class="font-18 ">Art & Desaign</div>
-                    </div>
-                </a>
-    
-                <a href="#">
-                    <div class="container-category p-atas-25">
-                        <img src="assets/img/icon-kategori/accounting.png" alt="">
-                        <div class="font-18 ">Business, Tax & Accounting</div>
-                    </div>
-                </a>
-    
-                <a href="#">
-                    <div class="container-category p-atas-25">
-                        <img src="assets/img/icon-kategori/hospital.png" alt="">
-                        <div class="font-18 ">Hospitaly & Tourism</div>
-                    </div>
-                </a>
-    
-                <a href="#">
-                    <div class="container-category p-atas-25">
-                        <img src="assets/img/icon-kategori/communication.png" alt="">
-                        <div class="font-18 ">Communication</div>
-                    </div>
-                </a>
-            </div>
         </div>
     
     
@@ -691,32 +631,7 @@
             <div class="rlt width-500 auto">
                 <div class="font-36 center p-atas-20 putih m-bawah-20">Inboxed <span class="bold">Teacher</span></div>
                 <div class="center our-teacher-home">
-                    <!-- next -->
-                    <!-- <div class="next">
-                        <img class="next1" src="assets/img/next1.png" alt="">
-                    </div> -->
                     <div class="Teacher-Home">
-                        {{-- <!-- SLIDER -->
-                        <div class="">
-                            <div class="inline-block m-kanan-20 m-kiri-20 teach">
-                                <div class="profile-teacher auto slide-teacher">
-                                    <!-- PROFILE PENGAJAR - GAMBAR -->
-                                    <img src="assets/img/profile-none.png" class="index-2 rlt" alt="">
-                                </div>
-                                <div class="container-nama-teacher">
-                                    <div class="nama-teacher"></div>
-                                    <div class="nama">
-                                        <!-- PROFILE PENGAJAR - NAMA -->
-                                        Dr. Ir. Muhammad Fadhil Darussalam M.phD
-                                        <br> <br>
-                                        Instructure
-    
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
-                        <!-- SLIDER -->
-                        <!-- SLIDER -->
                         @foreach($teacher as $t)
                         <div class="">
                             <div class="inline-block m-kanan-20 m-kiri-20 teach">
@@ -743,10 +658,6 @@
                     <div class="teach-button">
                         <button>ALL TEACHER</button>
                     </div>
-                    <!-- next -->
-                    <!-- <div class="next">
-                        <img class="next2" src="assets/img/next2.png" alt="">
-                    </div> -->
                 </div>
             </div>
         </div>

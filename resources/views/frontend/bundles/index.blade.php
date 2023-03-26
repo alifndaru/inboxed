@@ -122,7 +122,7 @@
                                                             @if($bundle->free == 1)
                                                                 <span>{{trans('labels.backend.bundles.fields.free')}}</span>
                                                             @else
-                                                                <span> {{$appCurrency['symbol'].' '.$bundle->price}}</span>
+                                                                <span>@rupiah($bundle->price)</span>
                                                             @endif
                                                         </div>
                                                         <div class="course-rate ul-li">
