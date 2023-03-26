@@ -338,11 +338,11 @@ input[type=radio]:not(old):checked+label>span>span {
                             <div class="font-12 m-bawah-30">*File Berbentuk PDF/JPEG </div>
 
                             <!-- ========== UPLOAD Ijazah S2 ========== -->
-                        @if(!is_null(Session::get('universitas1')))
+                            @if(!is_null(Session::get('universitas1')))
 
                             <div class="d-none" id="u-S2">
 
-                                <input class="m-bawah-10 {{ ($errors->has('file_bukti_pembayaran'))?'warnaplaceholder':'' }}" id="file-uploadS2" onchange="getFileNameS2(this)" type="file" name="file_bukti_pembayaran" />
+                                <input class="m-bawah-10 {{ ($errors->has('file_ijazah'))?'warnaplaceholder':'' }}" id="file-uploadS2" onchange="getFileNameS2(this)" type="file" name="file_ijazahs2" />
                                 
                                 <div class="font-18 m-bawah-5">Ijazah S2</div>
                                 <label class="m-bawah-5" for="file-uploadS2" id="file-drag">
@@ -355,35 +355,33 @@ input[type=radio]:not(old):checked+label>span>span {
                                             <div id="hasilS2"></div>
                                         </div>
                                     </div>
-                                    <div class="merah">{{ ($errors->has('file_bukti_pembayaran'))?$errors->first('file_bukti_pembayaran'):'' }}</div>
+                                    <div class="merah">{{ ($errors->has('file_ijazah'))?$errors->first('file_ijazah'):'' }}</div>
                                 </label>
                                 <div class="font-12 m-bawah-30">*File Berbentuk PDF/JPEG </div>
                             </div>
                         @endif
 
+                        <!-- ========== UPLOAD Ijazah S3 ========== -->
                         @if(!is_null(Session::get('universitas2')))
+                        {{-- <div class="d-none" id="u-S3"> --}}
 
-                        {{-- <div class="d-none" id="u-S2">
-
-                            <input class="m-bawah-10 {{ ($errors->has('file_bukti_pembayaran'))?'warnaplaceholder':'' }}" id="file-uploadS2" onchange="getFileNameS2(this)" type="file" name="file_bukti_pembayaran" />
+                            <input class="m-bawah-10 {{ ($errors->has('file_ijazah'))?'warnaplaceholder':'' }}" id="file-uploadS3" onchange="getFileNameS3(this)" type="file" name="file_ijazahs3" />
                             
-                            <div class="font-18 m-bawah-5">Ijazah S2</div>
-                            <label class="m-bawah-5" for="file-uploadS2" id="file-drag">
+                            <div class="font-18 m-bawah-5">Ijazah S3</div>
+                            <label class="m-bawah-5" for="file-uploadS3" id="file-drag">
                                 <div class="uploader">
-                                    <div class="center m-atas-20" id="logo-upload-S2">
+                                    <div class="center m-atas-20" id="logo-upload-S3">
                                         <img class="center" src="assets/img/upload.png" alt="">
                                     </div>
-                                    <div class="font-20 center" id="text-upload-S2">Browser to upload</div>
+                                    <div class="font-20 center" id="text-upload-S3">Browser to upload</div>
                                     <div class="posisi-hasil-upload center">
-                                        <div id="hasilS2"></div>
+                                        <div id="hasilS3"></div>
                                     </div>
                                 </div>
-                                <div class="merah">{{ ($errors->has('file_bukti_pembayaran'))?$errors->first('file_bukti_pembayaran'):'' }}</div>
+                                <div class="merah">{{ ($errors->has('file_ijazah'))?$errors->first('file_ijazah'):'' }}</div>
                             </label>
                             <div class="font-12 m-bawah-30">*File Berbentuk PDF/JPEG </div>
-                        </div> --}}
-
-                        {{-- ini nanti anjay --}}
+                        {{-- </div> --}}
                         @endif
 
                             <div class="center">
