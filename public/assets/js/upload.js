@@ -63,6 +63,19 @@ function getFileNameS2(input) {
     }
 }
 
+function getFileNameS3(input) {
+    var output = console.log(input.files[0].name) // With extension
+    var hasilS3 = document.getElementById("hasilS3");
+    hasilS2.innerHTML = input.files[0].name;
+    if (input.files[0].name = "") {
+        document.getElementById('logo-upload-S3').classList.remove('d-none');
+        document.getElementById('text-upload-S3').classList.remove('d-none');
+    } else {
+        document.getElementById('logo-upload-S3').classList.add('d-none');
+        document.getElementById('text-upload-S3').classList.add('d-none');
+    }
+}
+
 // function enableBrand(answer) {
 //     var cons1 = console.log(answer.value);
 //     // document.write(answer.value)
@@ -75,5 +88,14 @@ if (nam1 == "1" || nam1 == "2") {
     // document.getElementById('list-bunga').classList.remove('none');
 } else {
     document.getElementById('u-S2').classList.add('d-none');
+    // document.getElementById('list-bunga').classList.add('none');
+}
+
+let nam2 = localStorage.getItem('Upload-S3');
+if (nam2 == "1" || nam2 == "2") {
+    document.getElementById('u-S3').classList.remove('d-none');
+    // document.getElementById('list-bunga').classList.remove('none');
+} else {
+    document.getElementById('u-S3').classList.add('d-none');
     // document.getElementById('list-bunga').classList.add('none');
 }

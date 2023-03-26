@@ -216,16 +216,36 @@ class AdvokatController extends Controller
             $filebuktipembayaranname = $file_bukti_pembayaran ->getClientOriginalName();
             
         };
+        if ($file_ijazah2 = $request->file('file_ijazahs2')){
+            $fileijazah2name = $file_ijazah2 ->getClientOriginalName();
+        };
+        if ($file_ijazah3 = $request->file('file_ijazahs3')){
+            $fileijazah3name = $file_ijazah3 ->getClientOriginalName();
+        };
 
         if ($validator->passes()) {
             $request-> file('file_ijazah')->storeAs('ijazah_daftar_ikadin', $fileijazahname);
             $request-> file('file_ktp')->storeAs('ktp_daftar_ikadin', $filektpname);
             $request-> file('file_pasfoto')->storeAs('pasfoto_daftar_ikadin', $filepasfotoname);
             $request-> file('file_bukti_pembayaran')->storeAs('bukti_pembayaran_daftar_ikadin', $filebuktipembayaranname);
+            if ($file_ijazah2 = $request->file('file_ijazahs2')){
+                $request-> file('file_ijazahs2')->storeAs('ijazah_daftar_ikadin_s2', $fileijazah2name);
+                $advokat-> file_ijazahs2 = 'storage/ijazah_daftar_ikadin_s2/' . $fileijazah2name;
+            } else {
+                $advokat-> file_ijazahs2 = null;
+            };
+            if ($file_ijazah3 = $request->file('file_ijazahs3')){
+                $request-> file('file_ijazahs3')->storeAs('ijazah_daftar_ikadin_s3', $fileijazah3name);
+                $advokat-> file_ijazahs3 = 'storage/ijazah_daftar_ikadin_s3/' . $fileijazah3name;
+            } else {
+                $advokat-> file_ijazahs3 = null;
+            };
             $advokat-> file_ijazah = 'storage/ijazah_daftar_ikadin/' . $fileijazahname;
             $advokat-> file_ktp = 'storage/ktp_daftar_ikadin/' . $filektpname;
             $advokat-> file_pasfoto = 'storage/pasfoto_daftar_ikadin/' . $filepasfotoname;
             $advokat-> file_bukti_pembayaran = 'storage/bukti_pembayaran_daftar_ikadin/' . $filebuktipembayaranname;
+            // $advokat-> file_ijazahs2 = 'storage/ijazah_daftar_ikadin_s2/' . $fileijazah2name;
+            // $advokat-> file_ijazahs3 = 'storage/ijazah_daftar_ikadin_s3/' . $fileijazah3name;
             $advokat->save();
             
             Session::flash('hasil','berhasil');
