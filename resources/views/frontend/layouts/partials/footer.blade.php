@@ -13,10 +13,11 @@
                     <div class="col-md-4">
                         <div class="footer-widget ">
                             <div class="footer-logo mb35">
-                                <img src="{{asset("storage/logos/logo-inboxed-logo.png")}}" width="150px" alt="logo">
+                                <!-- <img src="{{asset("storage/logos/logo-inboxed-logo.png")}}" width="150px" alt="logo"> -->
                             </div>
                             @if($footer_data->short_description->status == 1)
                                 <div class="footer-about-text">
+                                    <p>footer</p>
                                     <p>{!! $footer_data->short_description->text !!} </p>
                                 </div>
                             @endif
@@ -78,7 +79,7 @@
                                         @csrf
                                         <input class="email" required name="subs_email" type="email" placeholder="@lang('labels.frontend.layouts.partials.email_address').">
                                         <div class="nws-button text-center  gradient-bg text-uppercase">
-                                            <button type="submit" value="Submit">@lang('labels.frontend.layouts.partials.subscribe_now')</button>
+                                            <button type="submit" style="padding-right: 130px;" value="Submit">@lang('labels.frontend.layouts.partials.subscribe_now')</button>
                                         </div>
                                         @if($errors->has('email'))
                                             <p class="text-danger text-left">{{$errors->first('email')}}</p>
@@ -98,7 +99,7 @@
                     @if($footer_data->copyright_text->status == 1)
                     <div class="col-md-6">
                         <div class="copy-right-text">
-                            <p>Powered By <a href="#" target="_blank" class="mr-4"> InboxEd</a>  {!!  $footer_data->copyright_text->text !!}</p>
+                            <p style="font-size: 18px;color: #000000; font-weight: bold;">Powered By <a href="#" target="_blank" class="mr-4"> InboxEd</a>  {!!  $footer_data->copyright_text->text !!}</p>
                         </div>
                     </div>
                     @endif
@@ -107,7 +108,7 @@
                         <div class="copy-right-menu-item float-right ul-li">
                             <ul>
                                 @foreach($footer_data->bottom_footer_links->links as $item)
-                                <li><a href="{{$item->link}}">{{$item->label}}</a></li>
+                                <!-- <li><a href="{{$item->link}}">{{$item->label}}</a></li> -->
                                 @endforeach
                                 @if(config('show_offers'))
                                     <li><a href="{{route('frontend.offers')}}">@lang('labels.frontend.layouts.partials.offers')</a> </li>

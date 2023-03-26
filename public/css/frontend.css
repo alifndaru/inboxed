@@ -391,8 +391,8 @@ h6 {
 }
 
 .widget-title {
-  font-size: 25px;
-  color: #333333;
+  font-size: 18px;
+  color: #000000;
   font-weight: 700;
   position: relative;
   margin-bottom: 50px;
@@ -405,7 +405,8 @@ h6 {
   height: 2px;
   width: 50px;
   left: 0;
-  background-color: #17d0cf;
+  background-color: #000000;
+  margin-top: -40px;
 }
 
 .breadcrumb-section {
@@ -455,6 +456,7 @@ h6 {
 .breadcrumb-section .breadcrumb-item::before {
   display: none;
 }
+
 
 .breadcrumb-section .breadcrumb-item.active {
   background-color: #3b3b3b;
@@ -1726,6 +1728,16 @@ button.alt-menu-btn.float-left {
   /* box-shadow: 1px 5px 3px rgba(0, 0, 0,.4); */
 }
 
+.subs-form input{
+  background-color: #D9D9D9;
+}
+
+.subs-form input::placeholder{
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
 .search-courses-slide input{
   border-radius: 15px;
   box-shadow: 1px 5px 3px rgba(0, 0, 0,.4);
@@ -1807,8 +1819,10 @@ button.alt-menu-btn.float-left {
 }
 
 .copy-right-menu-item li {
-  color: #989898;
+  color: #000000;
   margin-left: 30px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .copy-right-menu {
@@ -6163,8 +6177,9 @@ ul.product-tab li.active:after {
   border-radius: 100%;
   line-height: 30px;
   margin-right: 8px;
-  border: 2px solid #17d0cf;
+  /* border: 2px solid #17d0cf; */
   color: #666666;
+  background: #D9D9D9;
   text-align: center;
 }
 
@@ -6184,7 +6199,7 @@ ul.product-tab li.active:after {
 
 .copy-right-menu {
   padding: 30px 0px;
-  border-top: 1px solid #ddd6d6;
+  border-top: 1px solid #000000;
 }
 
 .copy-right-menu p {

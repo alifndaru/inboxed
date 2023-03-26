@@ -1541,7 +1541,7 @@ return array (
         'courses_categories' => 'Courses Categories',
         'browse_course_by_category' => 'Browse Courses<span> By Category.</span>',
         'faq_full' => 'Frequently<span> Asked Questions</span>',
-        'social_network' => 'Social Network',
+        'social_network' => 'Connect With Us',
         'subscribe_newsletter' => 'Subscribe Newsletter',
         'subscribe_now' => 'Subscribe Now',
         'latest_news_blog' => 'Latest <span>News Blog.</span>',
