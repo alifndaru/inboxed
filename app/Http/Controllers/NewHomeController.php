@@ -6,7 +6,6 @@ use App\Models\Course;
 use App\Models\Bundle;
 use App\Models\auth\User;
 // use App\Models\BundleCourses;
-
 use App\Models\NewHome;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;

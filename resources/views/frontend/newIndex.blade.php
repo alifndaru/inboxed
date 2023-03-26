@@ -544,55 +544,60 @@
                                     <div class="harga">@rupiah($b->price)</div>
                                 </div>
                             </div>
+                            <div class="ket-bundle auto">
+                                <div class="ket-bundle-popular">{{$b->category->name}}</div>
+                                <div class="">|</div>
+                                <div class="bundle-student-courses">{{$b->students()->count()}}</div>
+                                <div class="">|</div>
+                                <div class="bundle-student-courses">{{$b->courses->count()}} Courses</div>
+                            </div>
                         </div>
                     </div>
                     </div>
                     @endforeach
                     <!-- slider -->
                     <!-- slider -->
-                    @foreach ($course as $c)
+                    {{-- @foreach ($course as $c)
                     <div class="produk-det">
-                    <div class="m-bawah-10">
-                        <div class="produk putih-abu left">
-                            <div class="gambar-produk">
-                                <div class="keterangan-produk">
-                                    <div class="value-keterangan-produk courses">COURSES</div>
-                                    @if($c->free == 1)
-                                    <div class="value-keterangan-produk free">FREE</div>
-                                    @endif
+                        <div class="m-bawah-10">
+                            <div class="produk putih-abu left">
+                                <div class="gambar-produk">
+                                    <div class="keterangan-produk">
+                                        <div class="value-keterangan-produk courses">COURSES</div>
+                                        @if($c->free == 1)
+                                        <div class="value-keterangan-produk free">FREE</div>
+                                        @endif
+                                    </div>
+                                    <img class="foto-produk m-bawah-10" src="assets/img/foto-produk-2.png" alt="">
+                                    <a href="course/{{ $c->slug }}">
+                                        <div class="detail">
+                                            Course Detail
+                                            <img src="assets/img/next2.png" alt="">
+                                        </div>
+                                    </a>
                                 </div>
-                                <img class="foto-produk m-bawah-10" src="assets/img/foto-produk-2.png" alt="">
-                                <a href="course/{{ $c->slug }}">
-                                    <div class="detail">
-                                        Course Detail
-                                        <img src="assets/img/next2.png" alt="">
-                                    </div>
-                                </a>
-                            </div>
-    
-                            <!-- =================  JUDUL-PRODUK  =============== -->
-                            <div class="judul-produk">
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 height-60">{{ $c->title }}</div>
-                                    <div class="font-9 m-kiri-10"> instructur : </div>
-                                    <div class="font-12 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>                                    
-                                    <!-- =================  HARGA-PRODUK  =============== -->
-                                    <div class="container-harga-home  auto">
-                                        <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div>
-                                    </div>
-                                    <div class="ket-bundle auto">
-                                        <!-- <div class="ket-bundle-popular">Bussiness, tax & accounting</div> -->
-                                        <!-- <div class="ket-bundle-popular">Information Technologies</div> -->
-                                        <div class="ket-bundle-popular">Law</div>
-                                        <div class="">|</div>
-                                        <div class="bundle-student-courses">0 Student</div>
-                                        <div class="">|</div>
-                                        <div class="bundle-student-courses">8 Courses</div>
-                                    </div>
+        
+                                <!-- =================  JUDUL-PRODUK  =============== -->
+                                <div class="judul-produk">
+                                    <div class="font-18 width-232 m-kiri-10 m-bawah-20 height-60">{{ $c->title }}</div>
+                                        <div class="font-9 m-kiri-10"> instructur : </div>
+                                        <div class="font-12 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>                                    
+                                        <!-- =================  HARGA-PRODUK  =============== -->
+                                        <div class="container-harga-home  auto">
+                                            <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div>
+                                        </div>
+                                        <div class="ket-bundle auto">
+                                            <div class="ket-bundle-popular">Law</div>
+                                            <div class="">|</div>
+                                            <div class="bundle-student-courses">0 Student</div>
+                                            <div class="">|</div>
+                                            <div class="bundle-student-courses">8 Courses</div>
+                                        </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    </div>
-                    @endforeach
+                    @endforeach --}}
                     <!-- slider -->
 
                 </div>

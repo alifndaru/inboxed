@@ -384,16 +384,11 @@ input[type=radio]:not(old):checked+label>span>span {
 }
 
 .ket-bundle{
-    /* width: 90%;
-    background-color: red;
-    margin-top: 15px;
-    height: 40px; */
-    margin-top: 15px;
+    margin-top: -34px;
+    /* margin-bottom: 40px; */
     display: grid;
     height: 40px;
     align-content: center;
-    /* background-color: red; */
-    /* padding-left: 10px; */
     gap: 1px;
     grid-template-columns: auto auto auto auto auto;
 }
@@ -401,9 +396,7 @@ input[type=radio]:not(old):checked+label>span>span {
 .ket-bundle > div{
     text-align: center;
     font-size: 12px;
-    /* background-color: #13DB63; */
     margin: auto;
-    /* background: #000; */
 }
 
 .ket-bundle > .ket-bundle-popular{
