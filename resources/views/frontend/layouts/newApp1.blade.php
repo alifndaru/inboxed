@@ -178,17 +178,20 @@
                 htmlView+= 
                     `
                     <div id="course-search" class="Product-Home">
+                    <!-- slider -->
+                    @foreach ($course as $c)
+                    <div class="produk-det">
                     <div class="m-bawah-10">
-                        <div class="produk putih left">
+                        <div class="produk putih-abu left">
                             <div class="gambar-produk">
                                 <div class="keterangan-produk">
                                     <div class="value-keterangan-produk courses">COURSES</div>
-                                    @if(`+res.courses[i].free+` == 1)
+                                    @if($c->free == 1)
                                     <div class="value-keterangan-produk free">FREE</div>
                                     @endif
                                 </div>
                                 <img class="foto-produk m-bawah-10" src="assets/img/foto-produk-2.png" alt="">
-                                <a href="course/`+res.courses[i].slug+`">
+                                <a href="course/{{ $c->slug }}">
                                     <div class="detail">
                                         Course Detail
                                         <img src="assets/img/next2.png" alt="">
@@ -198,18 +201,23 @@
     
                             <!-- =================  JUDUL-PRODUK  =============== -->
                             <div class="judul-produk">
-                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 height-60">`+res.courses[i].title+`</div>
+                                <div class="font-18 width-232 m-kiri-10 m-bawah-20 height-60">{{ $c->title }}</div>
                                     <div class="font-9 m-kiri-10"> instructur : </div>
-                                                            
-                                     <!-- =================  HARGA-PRODUK  =============== -->
+                                    <div class="font-12 width-232 m-kiri-10">{{ $c->teachers[0]->first_name }} {{ $c->teachers[0]->last_name }}</div>                                    
+                                    <!-- =================  HARGA-PRODUK  =============== -->
                                     <div class="container-harga-home auto">
-                                        <div class="diskon inline-block">{{$appCurrency['symbol']}} {{ $c->price }}</div>
-                                        <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div>
+                                        {{-- <div class="diskon inline-block">{{$appCurrency['symbol']}} {{ $c->price }}</div> --}}
+                                        {{-- <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div> --}}
+                                         <div class="diskon inline-block">@rupiah($c->price)</div>
+                                            <div class="harga inline-block">@rupiah($c->strike)</div>
                                             <br> rating :
                                     </div>
                             </div>
                         </div>
                     </div>
+                    </div>
+                    @endforeach
+                    <!-- slider -->
                 </div>
                     `
             }
