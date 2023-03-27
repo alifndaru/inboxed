@@ -144,7 +144,7 @@ yang diberikan. </div>
                     <div class="f-kiri width-100" style="position:absolute; margin-left:550px">
                         <label for="kode inline-block">Kode Pos*</label>
                         <input class="p-kiri-20 width-190 {{ ($errors->has('kode_pos'))?'warnaplaceholder':'' }} " type="text" name="kode_pos" id="" placeholder="" required value="{{ old('kode_pos') }}">
-                        <div class="merah">{{ ($errors->has('kode_pos'))?$errors->first('kode_pos'):'' }}</div>
+                        <div class="merah width-190">{{ ($errors->has('kode_pos'))?$errors->first('kode_pos'):'' }}</div>
                     </div>
                    
                     <div class="alamatbawah" style="padding-top: 100px">
