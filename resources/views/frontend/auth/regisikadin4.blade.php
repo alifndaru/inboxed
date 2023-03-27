@@ -18,6 +18,7 @@ $userid = Auth::user()->id;
     <link rel="stylesheet" href="assets/css/frontend.css">
     <link rel="stylesheet" href="assets/css/ukuran.css">
     <link rel="stylesheet" href="assets/css/new.css">
+    <link rel="stylesheet" href="assets/css/detailing.css">
     <!-- <link rel="stylesheet" href="assets/css/upload-format.css"> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -40,132 +41,132 @@ $userid = Auth::user()->id;
         }
 
 
-.form-cont-pop-450x500{
-    border: 1px solid #2D3260;
-    width: 450px;;
-    border-radius: 25px;
-    background-color: #2D3260;
-    box-sizing: border-box;
-}
+        .form-cont-pop-450x500{
+            border: 1px solid #2D3260;
+            width: 450px;;
+            border-radius: 25px;
+            background-color: #2D3260;
+            box-sizing: border-box;
+        }
 
-.merah {
-            color: red;
-}
+        .merah {
+                    color: red;
+        }
 
-.warnaplaceholder::-webkit-input-placeholder {
-            color: red;
-            margin-bottom: 40px;
-}
+        .warnaplaceholder::-webkit-input-placeholder {
+                    color: red;
+                    margin-bottom: 40px;
+        }
 
-.sukses{
-    color: #26D3A4;
-}
+        .sukses{
+            color: #26D3A4;
+        }
 
-.gagal{
-    color: #FF0000;
-}
-
-
-/* ================================== */
-/* ========= INPUT - GENDER ========= */
-/* ================================== */
-input[type=radio]:not(old) {
-    width: 50px;
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    opacity: 0;
-}
-
-input[type=radio]:not(old)+label {
-    display: inline-block;
-    margin-left: -1em;
-    line-height: 1.5em;
-}
-
-input[type=radio]:not(old)+label>span {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    /* border           : 0.0625em solid rgb(192,192,192); */
-    border-radius: 50%;
-    background: #E7F6F2;
-    background-image: -moz-linear-gradient(#E7F6F2, #E7F6F2);
-    background-image: -ms-linear-gradient(#E7F6F2, #E7F6F2);
-    background-image: -o-linear-gradient(#E7F6F2, #E7F6F2);
-    background-image: -webkit-linear-gradient(#E7F6F2, #E7F6F2);
-    background-image: linear-gradient(#E7F6F2, #E7F6F2);
-    vertical-align: bottom;
-}
-
-input[type=radio]:not(old):checked+label>span {
-    background-image: -moz-linear-gradient(#E7F6F2, #E7F6F2);
-    background-image: -ms-linear-gradient(#E7F6F2, #E7F6F2);
-    background-image: -o-linear-gradient(#E7F6F2, #E7F6F2);
-    background-image: -webkit-linear-gradient(#E7F6F2, #E7F6F2);
-    background-image: linear-gradient(#E7F6F2, #E7F6F2);
-}
-
-input[type=radio]:not(old):checked+label>span>span {
-    display: block;
-    width: 15px;
-    height: 15px;
-    margin: 2.2px;
-    border: 0.0625em solid rgb(115, 153, 77);
-    border-radius: 50%;
-    background: #2D3260;
-    background-image: -moz-linear-gradient(#2D3260, #2D3260);
-    background-image: -ms-linear-gradient(#2D3260, #2D3260);
-    background-image: -o-linear-gradient(#2D3260, #2D3260);
-    background-image: -webkit-linear-gradient(#2D3260, #2D3260);
-    background-image: linear-gradient(#2D3260, #2D3260);
-}
-
-.cover {
-    background-size: cover
-}
-
-.box-sizing {
-    box-sizing: border-box;
-}
+        .gagal{
+            color: #FF0000;
+        }
 
 
-/* ================================== */
-/* ======= INPUT - FILE(DIV) ======== */
-/* ================================== */
+        /* ================================== */
+        /* ========= INPUT - GENDER ========= */
+        /* ================================== */
+        input[type=radio]:not(old) {
+            width: 50px;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            opacity: 0;
+        }
 
-.uploader{
-    width: 641px;
-    height: 96px;
-    border: 3px dashed white;
-    box-sizing: border-box;
-    border-radius: 12px;
+        input[type=radio]:not(old)+label {
+            display: inline-block;
+            margin-left: -1em;
+            line-height: 1.5em;
+        }
 
-}
+        input[type=radio]:not(old)+label>span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            /* border           : 0.0625em solid rgb(192,192,192); */
+            border-radius: 50%;
+            background: #E7F6F2;
+            background-image: -moz-linear-gradient(#E7F6F2, #E7F6F2);
+            background-image: -ms-linear-gradient(#E7F6F2, #E7F6F2);
+            background-image: -o-linear-gradient(#E7F6F2, #E7F6F2);
+            background-image: -webkit-linear-gradient(#E7F6F2, #E7F6F2);
+            background-image: linear-gradient(#E7F6F2, #E7F6F2);
+            vertical-align: bottom;
+        }
 
-.main-container input[type=file]{
-    display: none;
-}
+        input[type=radio]:not(old):checked+label>span {
+            background-image: -moz-linear-gradient(#E7F6F2, #E7F6F2);
+            background-image: -ms-linear-gradient(#E7F6F2, #E7F6F2);
+            background-image: -o-linear-gradient(#E7F6F2, #E7F6F2);
+            background-image: -webkit-linear-gradient(#E7F6F2, #E7F6F2);
+            background-image: linear-gradient(#E7F6F2, #E7F6F2);
+        }
 
-.gambar-upload{
-    background-image: url(../img/upload.png);
+        input[type=radio]:not(old):checked+label>span>span {
+            display: block;
+            width: 15px;
+            height: 15px;
+            margin: 2.2px;
+            border: 0.0625em solid rgb(115, 153, 77);
+            border-radius: 50%;
+            background: #2D3260;
+            background-image: -moz-linear-gradient(#2D3260, #2D3260);
+            background-image: -ms-linear-gradient(#2D3260, #2D3260);
+            background-image: -o-linear-gradient(#2D3260, #2D3260);
+            background-image: -webkit-linear-gradient(#2D3260, #2D3260);
+            background-image: linear-gradient(#2D3260, #2D3260);
+        }
 
-}
+        .cover {
+            background-size: cover
+        }
 
-.d-none{
-    display: none;
-}
+        .box-sizing {
+            box-sizing: border-box;
+        }
 
-.posisi-hasil-upload{
-    /* padding-top: 40px;
-    margin-top: 40px; */
-    line-height: 96px;
-}
 
-.main-menu-container{
-    background-color: black;
-}
+        /* ================================== */
+        /* ======= INPUT - FILE(DIV) ======== */
+        /* ================================== */
+
+        .uploader{
+            width: 641px;
+            height: 96px;
+            border: 3px dashed white;
+            box-sizing: border-box;
+            border-radius: 12px;
+
+        }
+
+        .main-container input[type=file]{
+            display: none;
+        }
+
+        .gambar-upload{
+            background-image: url(../img/upload.png);
+
+        }
+
+        .d-none{
+            display: none;
+        }
+
+        .posisi-hasil-upload{
+            /* padding-top: 40px;
+            margin-top: 40px; */
+            line-height: 96px;
+        }
+
+        .main-menu-container{
+            background-color: black;
+        }
     </style>
 </head>
 
@@ -390,8 +391,8 @@ input[type=radio]:not(old):checked+label>span>span {
                                 <input type="button" class="width-335 m-bawah-3 btn-login" style="border-radius: 14px; border: none;" value="REGISTER">
                                 </a>
                                 @else
-                                <button class="width-335 m-bawah-3 btn-login" style="border-radius: 14px; border: none; line-height: 12px;"
-                                    type="submit"> REGISTER </button>
+                                <button  style="border-radius: 14px; border: none;line-height: 12px; height:30px;"
+                                    type="submit" class="center wid-inp-6 font-18 hvr">Register</button>
                                 @endif
                             </div>
         </form>
