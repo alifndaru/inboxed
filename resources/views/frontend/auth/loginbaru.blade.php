@@ -134,7 +134,7 @@
                 </div>
                 <div class="font-24 m-bawah-20 center">PILIH JENIS PENDAFTARAN</div>
 
-                <a href="/regisikadin">
+                <a href="/courses">
                 <img class="m-kiri-50 p-kanan-50 p-kiri-20" src="assets/img/profesi.png">
                 <div class="m-kiri-50 wid-inp-6 m-bawah-20 m-atas-10" style="color: white">Competency <br>Certification</div>
                 </a>

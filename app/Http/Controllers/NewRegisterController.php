@@ -206,7 +206,8 @@ class NewRegisterController extends Controller
        $userForRole = User::find($user->id);
        $userForRole->confirmed = 1;
        $userForRole->save();
-       $userForRole->assignRole('student');
+    //    $userForRole->assignRole('student');
+        $userForRole->assignRole('student');
 
        if(config('access.users.registration_mail')) {
            $this->sendAdminMail($user);
