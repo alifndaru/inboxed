@@ -132,7 +132,7 @@ body{
         <div class="kembali m-bawah-10" style="font-family: 'Lexend', sans-serif,serif;">
             <a class="m-bawah-10" href="/regisikadin">
                 <img class="inline " src="assets/img/back.png" alt="">
-                <div class="font-16 abs inline-block m-kiri-10" style="color: #fff; margin-top:2px;">kembali</div>
+                <div class="font-16 abs inline-block m-kiri-10 hvr" style="color: #fff; margin-top:2px;">kembali</div>
             </a>
         </div>
 
@@ -146,7 +146,7 @@ body{
             yang diberikan. Berikut adalah langkah-langkah pengisian data:</div>
 
 
-        <div class="langkah-verifikasi">
+        <div class="langkah-verifikasi red">
             <div class="langkah">
                 <div class="judul-langkah bold" style="color:#FFFFFF;">Langkah 1</div>
                 <div class="judul">ISI DATA DIRI ANDA</div>
@@ -175,6 +175,7 @@ body{
                     Anda.
                     <br>
                     <br>
+                    <br>
                 </div>
             </div>
             <div class="langkah">
@@ -191,13 +192,14 @@ body{
                     <br>
                     <br>
                     <br>
+                    <br>
                 </div>
             </div>
         </div>
 
         <div class="center">
             <a href="/regisikadin2">
-                <input type="submit" class="center wid-inp-6 font-18 hvr" value="Mulai Pendaftaran" style="margin-top:30px; margin-left:30px; height:30px;">
+                <input type="submit" class="center wid-inp-6 font-18 hvr" value="Mulai Pendaftaran" style="margin-top:50px; margin-left:30px; height:30px;">
             </a>
         </div>
     </div><!-- MAIN CONTAINER -->
