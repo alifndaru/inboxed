@@ -63,6 +63,18 @@ function getFileNameS2(input) {
     }
 }
 
+function getFileNameS3(input) {
+    var output = console.log(input.files[0].name) // With extension
+    var hasilS3 = document.getElementById("hasilS3");
+    hasilS3.innerHTML = input.files[0].name;
+    if (input.files[0].name = "") {
+        document.getElementById('logo-upload-S3').classList.remove('d-none');
+        document.getElementById('text-upload-S3').classList.remove('d-none');
+    } else {
+        document.getElementById('logo-upload-S3').classList.add('d-none');
+        document.getElementById('text-upload-S3').classList.add('d-none');
+    }
+}
 // function enableBrand(answer) {
 //     var cons1 = console.log(answer.value);
 //     // document.write(answer.value)
