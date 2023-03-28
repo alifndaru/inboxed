@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         @if(config('favicon_image') != "")
-             <link rel="shortcut icon" type="image/x-icon" href="{{asset('storage/logos/logo-kecil.png')}}"/>
+             <link rel="shortcut icon" type="image/x-icon" href="{{asset('storage/logos/Logo Kecil.png')}}"/>
         @endif
         <title>@yield('title', app_name())</title>
         <meta name="description" content="@yield('meta_description', '')">
