@@ -13,11 +13,10 @@
                     <div class="col-md-4">
                         <div class="footer-widget ">
                             <div class="footer-logo mb35">
-                                <!-- <img src="{{asset("storage/logos/logo-inboxed-logo.png")}}" width="150px" alt="logo"> -->
+                                <img src="{{asset("storage/logos/logo-inboxed-logo.png")}}" width="150px" alt="logo">
                             </div>
                             @if($footer_data->short_description->status == 1)
                                 <div class="footer-about-text">
-                                    <p>footer</p>
                                     <p>{!! $footer_data->short_description->text !!} </p>
                                 </div>
                             @endif
@@ -79,7 +78,7 @@
                                         @csrf
                                         <input class="email" required name="subs_email" type="email" placeholder="@lang('labels.frontend.layouts.partials.email_address').">
                                         <div class="nws-button text-center  gradient-bg text-uppercase">
-                                            <button type="submit" style="padding-right: 130px;" value="Submit">@lang('labels.frontend.layouts.partials.subscribe_now')</button>
+                                            <button type="submit" style="padding-right: 130px; border:none;" value="Submit">@lang('labels.frontend.layouts.partials.subscribe_now')</button>
                                         </div>
                                         @if($errors->has('email'))
                                             <p class="text-danger text-left">{{$errors->first('email')}}</p>
