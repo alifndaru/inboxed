@@ -48,7 +48,7 @@ class AdvokatController extends Controller
             'alamat' => 'required|max:255|string',
             'provinsi' => 'required|max:255|string',
             'kota' => 'required|max:255|string',
-            'kode_pos' => 'required|max:255|string',
+            'kode_pos' => 'required|max:255|regex:/^[0-9]{5}$/',
             'kecamatan' => 'required|max:255|string',
             'kelurahan' => 'required|max:255|string',
             'no_rumah' => 'required|max:255|string',
@@ -56,22 +56,29 @@ class AdvokatController extends Controller
             'alamat_kantor' => 'required|max:255|string',
             'provinsi_kantor' => 'required|max:255|string',
             'kota_kantor' => 'required|max:255|string',
-            'kode_pos_kantor' => 'required|max:255|string',
+            'kode_pos_kantor' => 'required|max:255|regex:/^[0-9]{5}$/',
             'kecamatan_kantor' => 'required|max:255|string',
             'kelurahan_kantor' => 'required|max:255|string',
             'no_kantor' => 'required|max:255|string',
             'universitas' => 'required|max:255|string',
             'program_studi' => 'required|max:255|string',
             'tahun_kelulusan' => 'required|max:255|string',
+            'ipk' => 'required|numeric|between:0,4|regex:/^\d+(\.\d{1,2})?$/',
             'no_ijazah' => 'required|max:255|string',
             'universitas1' => 'max:255|string',
             'program_studi1' => 'max:255|string',
             'tahun_kelulusan1' => 'max:255|string',
+            'ipk1' => 'regex:/^(?:0|[1-3]\.\d{1,2}|4(?:\.0{1,2})?)$/',
             'no_ijazah1' => 'max:255|string',
             'universitas2' => 'max:255|string',
             'program_studi2' => 'max:255|string',
             'tahun_kelulusan2' => 'max:255|string',
+            'ipk2' => 'regex:/^(?:0|[1-3]\.\d{1,2}|4(?:\.0{1,2})?)$/',
             'no_ijazah2' => 'max:255|string',
+
+        ],[
+            'kode_pos.regex' => 'Kode Pos must be a five-digit number.',
+            'kode_pos_kantor.regex' => 'Kode Pos must be a five-digit number.'
 
         ]);
         if ($validator->passes()) {     
