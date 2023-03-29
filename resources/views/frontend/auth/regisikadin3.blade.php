@@ -125,7 +125,7 @@ body{
 
 <body>
 @section('content')
-<div class="" style="width: 100%; height: 50px; margin-bottom: 100px;"></div>
+<div class="" style="width: 100%; height: 50px; margin-bottom: 120px;"></div>
     
     <!-- ========== BACK ========== -->
     <div class="main-container width-870 head padding-30 box-sizing auto m-atas-23 m-bawah-10">

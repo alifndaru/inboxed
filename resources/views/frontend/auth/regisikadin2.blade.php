@@ -54,7 +54,7 @@
 </head>
 <body>
     @section('content')
-    <div class="" style="width: 100%; height: 50px; margin-bottom: 100px;"></div>
+    <div class="" style="width: 100%; height: 50px; margin-bottom: 120px;"></div>
     <!-- =================REGISTRASI=============== -->
     <div class="main-container auto p-bawah-30 width-800 " style="margin-top: 50px;">
         <div class="head width-800 m-atas-4">
@@ -112,8 +112,18 @@ yang diberikan. </div>
                         <label for="Female"><span><span></span></span>Perempuan</label>
                     </div>
                     <br>
+                    {{-- <label for="agama">Agama*</label> --}}
+                    {{-- <input class="width-745  p-kiri-20 {{ ($errors->has('agama'))?'warnaplaceholder':'' }}" type="text" name="agama" required value=" {{ old('agama') }} " placeholder="Agama"> --}}
                     <label for="agama">Agama*</label>
-                    <input class="width-745  p-kiri-20 {{ ($errors->has('agama'))?'warnaplaceholder':'' }}" type="text" name="agama" required value=" {{ old('agama') }} " placeholder="Agama">
+                    <select class="width-745 p-kiri-20 m-bawah-10   ">
+                        <option value="Ateis">Prefer Not Say</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Konghuchu">Kong Hu C`hu</option>
+                      </select>
                     <div class="merah">{{ ($errors->has('agama'))?$errors->first('agama'):'' }}</div>
 
                     <label for="tmp-lahir">Tempat Lahir*</label>
@@ -143,7 +153,7 @@ yang diberikan. </div>
                     </div>
                     <div class="f-kiri width-100" style="position:absolute; margin-left:550px">
                         <label for="kode inline-block">Kode Pos*</label>
-                        <input class="p-kiri-20 width-190 {{ ($errors->has('kode_pos'))?'warnaplaceholder':'' }} " type="text" name="kode_pos" id="" placeholder="" required value="{{ old('kode_pos') }}">
+                        <input class="p-kiri-20 width-190 {{ ($errors->has('kode_pos'))?'warnaplaceholder':'' }} " type="number" name="kode_pos" id="" placeholder="" required value="{{ old('kode_pos') }}">
                         <div class="merah width-190">{{ ($errors->has('kode_pos'))?$errors->first('kode_pos'):'' }}</div>
                     </div>
                    
@@ -172,7 +182,6 @@ yang diberikan. </div>
 
 
                     <label class="bold font-36" for="kantor">Kantor</label> <br>
-
                     <label for="namakantor">Nama Kantor</label>
                     <input class="width-745 p-kiri-20 {{ ($errors->has('namakantor'))?'warnaplaceholder':'' }}" type="text" name="nama_kantor" required value="{{ old('nama_kantor') }}">
                     <div class="merah">{{ ($errors->has('namakantor'))?$errors->first('namakantor'):'' }}</div>
@@ -235,7 +244,7 @@ yang diberikan. </div>
                     </div>
                     <div class="f-kiri width-10" style="position: relative; left:70px;">
                         <label for="universitas inline-block width-10" >IPK*</label>
-                        <input class="center width-150 {{ ($errors->has('ipk'))?'warnaplaceholder':'' }}" type="text" name="ipk" id="" placeholder="0.00/4.00" required value="{{ old('ipk') }}">
+                        <input class="center width-150 {{ ($errors->has('ipk'))?'warnaplaceholder':'' }}" type="number" name="ipk" id="" placeholder="0.00/4.00" required value="{{ old('ipk') }}">
                         <div class="merah">{{ ($errors->has('ipk'))?$errors->first('ipk'):'' }}</div>
                     </div>
                     <div class="f-kiri width-200" style="position:absolute; margin-left:370px">
