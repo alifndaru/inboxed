@@ -802,9 +802,9 @@ padding-bottom: 20px;
 
 .logo-triple-s {
     position: fixed;
-    width: 103px;
+    width: 95px;
     height: 83px;
-    left: 180px;
+    left: 180px;  
     bottom: 22px;
     background-image: url(../img/triples.png);
     overflow: hidden;
@@ -813,12 +813,38 @@ padding-bottom: 20px;
     /* background-color: red; */
 }
 
+.logo-bnsp {
+    position: fixed;
+    width: 115px;
+    height: 90px;
+    left: 295px;
+    bottom: 23px;
+    background-image: url(../img/bnsp.png);
+    overflow: hidden;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+}
+
+.logo-atlas {
+    position: fixed;
+    width: 115px;
+    height: 88px;
+    left: 380px;
+    bottom: 23px;
+    background-image: url(../img/atlaz.png);
+    overflow: hidden;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+}
+
 .logo-ikadin {
     position: fixed;
-    width: 84px;
+    width: 90px;
     height: 88px;
-    left: 307px;
-    bottom: 23px;
+    left: 460px;
+    bottom: 29px;
     background-image: url(../img/ikadin.png);
     overflow: hidden;
     background-size: 70%;

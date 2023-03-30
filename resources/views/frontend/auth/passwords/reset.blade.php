@@ -198,10 +198,13 @@
 <div class="foot">
     <div class="foot-part">Partnership with:</div>
     <a href="https://www.triples.co.id/">
-    <div class="logo-triple-s"></div></a>
-
-    <a href="https://dpdikadindki.org">
-    <div class="logo-ikadin"></div> </a>
+        <div class="logo-triple-s"></div></a>
+        <a href="https://bnsp.go.id/">
+        <div class="logo-bnsp"></div> </a>
+        <a href="https://mindup.atlasfizl.com/">
+        <div class="logo-atlas"></div> </a>
+        <a href="https://www.dpdikadindki.org/">
+            <div class="logo-ikadin"></div> </a>
 </div>
 
     </body>
