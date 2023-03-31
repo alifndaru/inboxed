@@ -139,6 +139,45 @@
     body{
         font-family: 'Lexend';
     }
+
+    
+    .s-course .owl-nav {
+        position: relative;
+        -webkit-transform: translateY(-150px);
+        -ms-transform: translateY(-150px);
+        transform: translateY(-150px);
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .s-course .owl-nav .owl-prev {
+        float: left;
+        width: 60px;
+        height: 60px;
+        line-height: 70px;
+        text-align: center;
+        margin: 0 5px;
+        border-radius: 15px;
+        background-color: #2D3260;
+        position: relative;
+        top: 10%;
+        left: -12%;
+    }
+
+    .s-course .owl-nav .owl-next {
+        float: right;
+        width: 60px;
+        height: 60px;
+        line-height: 70px;
+        text-align: center;
+        margin: 0 5px;
+        border-radius: 15px;
+        background-color: #2D3260;
+        position: relative;
+        top: 10%;
+        right: -12%;
+    }
+
 </style>
 
 <body>
@@ -447,6 +486,7 @@
     
                 <!-- =================  PRODUK-1  =============== -->
                 <!-- Slider container -->
+                <div class="s-course"></div>
                 <div id="course-search" class="Product-Home">
                     <!-- slider -->
                     @foreach ($course as $c)
@@ -512,14 +552,15 @@
                     <button class="logo-search-produk index-1" style="font-size: 0.5rem;" type="submit">
                         <i class="fa fa-search fa-3x"></i>
                     </button>
-                    <input class="font-18 search-produk" type="search" placeholder="Search" name="" id="search">
+                    <input class="font-18 search-produk" type="search" placeholder="Search" name="" id="search-bundle">
                 </div>
             </div> <!-- JUDUL -->
             <div class="center">
     
                 <!-- =================  PRODUK-1  =============== -->
                 <!-- Slider container -->
-                <div class="Product-Home">
+                <div class="s-bundle"></div>
+                <div id="bundle-search" class="Product-Home">
                     <!-- slider -->
                     @foreach ($bundle as $b)
                     <div class="produk-det">

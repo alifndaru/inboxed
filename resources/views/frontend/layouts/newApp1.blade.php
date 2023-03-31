@@ -154,6 +154,8 @@
         var font_color = "{{config('font_color')}}"
         setActiveStyleSheet(font_color);
     </script>
+
+
     <script>
         $('#search-course').on('keyup', function(){
                 searchCourse();
@@ -177,10 +179,9 @@
             for( let i = 0; i<res.courses.length; i++){
                 htmlView+= 
                     `
-                    <div id="course-search" class="Product-Home">
                     <!-- slider -->
                     @foreach ($course as $c)
-                    <div class="produk-det">
+                    <div class="produk-det inline-block">
                     <div class="m-bawah-10">
                         <div class="produk putih-abu left">
                             <div class="gambar-produk">
@@ -225,10 +226,42 @@
                     </div>
                     @endforeach
                     <!-- slider -->
-                </div>
                     `
             }
-            $('#course-search').html(htmlView);
+
+            document.getElementById('course-search').classList.add('d-none');
+            $('.s-course').html(htmlView);
+            $('.s-course').owlCarousel({
+                    margin: 0,
+                    responsiveClass: true,
+                    nav: true,
+                    dots: false,
+                    autoplay: true,
+                    navText: ["<i class='fas fa-chevron-left fa-2x' style='color: white;'></i>", "<i class='fas fa-chevron-right fa-2x' style='color: white;'></i>"],
+                    smartSpeed: 1000,
+                    responsive: {
+                        0: {
+                            items: 4,
+                        },
+                        400: {
+                            items: 4,
+                        },
+                        600: {
+                            items: 4,
+                        }, 
+                        700: {
+                            items: 4,
+                        },
+                        800: {
+                            items: 4,
+                        },
+                        1000: {
+                            items: 4,
+                            
+                        }
+                    },
+                });
+            
         }
     </script>
 
