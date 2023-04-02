@@ -13,3 +13,13 @@
 [14-Mar-2023 05:20:38 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
 [14-Mar-2023 05:29:14 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
 [14-Mar-2023 05:29:19 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[28-Mar-2023 07:12:25 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[28-Mar-2023 07:12:25 UTC] PHP Warning:  require(/home/n1572647/public_html/staging/vendor/autoload.php): failed to open stream: No such file or directory in /home/n1572647/public_html/staging/artisan on line 18
+[28-Mar-2023 07:12:25 UTC] PHP Fatal error:  require(): Failed opening required '/home/n1572647/public_html/staging/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/n1572647/public_html/staging/artisan on line 18
+[28-Mar-2023 07:12:36 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[28-Mar-2023 07:14:43 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[28-Mar-2023 07:14:44 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[28-Mar-2023 07:14:45 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[28-Mar-2023 07:14:56 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[28-Mar-2023 07:15:05 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[29-Mar-2023 01:08:42 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
