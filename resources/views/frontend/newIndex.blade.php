@@ -192,10 +192,10 @@
                 <a href="https://dpdikadindki.org">
                     <img class="ikadin" src="assets/img/Logo Kecil-ikadin.png" alt="Logo Ikadin">
                 </a>
-                <a href="#">
+                <a href="https://mindup.atlasfizl.com/">
                     <img class="M" src="assets/img/Logo Kecil-0.png" alt="">
                 </a>
-                <a href="#">
+                <a href="https://bnsp.go.id/">
                     <img class="bnsp" src="assets/img/Logo Kecil-bnsp.png" alt="BNSP">
                 </a>
             </div>
@@ -714,11 +714,12 @@
                         @endforeach
                         <!-- SLIDER -->
                     </div>
-    
+                </div>
+                <a href="/teachers" class="abs" style="z-index: 10;margin-left: -95px;">
                     <div class="teach-button">
                         <button>ALL TEACHER</button>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     
