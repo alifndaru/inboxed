@@ -94,12 +94,10 @@ yang diberikan. </div>
                     <div class="phone p-atas-10 width-900">
                         <label for="handphone">No Handphone*</label> <br>
                         <select class="width-90 center {{ ($errors->has('negara_phone'))?'warnaplaceholder':'' }}" name="negara_phone" id="country" onchange="country_code()">
-                            @foreach ($countries as $country)
-                            <option value="{{ $country->value }}">{{ $country->value }}</option>
-                            @endforeach
+                            <option value="{{ $user->negara_phone }}">{{  $user->negara_phone }}</option>
                             <div class="merah">{{ ($errors->has('negara_phone'))?$errors->first('negara_phone'):'' }}</div>
                         </select>
-                        <input type="number" name="phone" class="width-650 p-kiri-20 {{ ($errors->has('phone'))?'warnaplaceholder':'' }}" id="output" placeholder="Phone Number" value="{{ $user->phone }}">
+                        <input type="text" name="phone" class="width-650 p-kiri-20 {{ ($errors->has('phone'))?'warnaplaceholder':'' }}" id="output" placeholder="Phone Number" value="{{ $user->phone }}" readonly>
                         <div class="merah">{{ ($errors->has('phone'))?$errors->first('phone'):'' }}</div>
                     </div>  
                     <label for="">Jenis Kelamin : </label>
