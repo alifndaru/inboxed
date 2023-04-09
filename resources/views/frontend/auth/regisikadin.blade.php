@@ -50,7 +50,7 @@
     @section('content')
 
     {{-- START CONTAINER --}}
-    <div class="" style="width: 100%; height: 50px; margin-bottom: 100px;"></div>
+    <div class="" style="width: 100%; height: 50px; margin-bottom: 120px;"></div>
     <div class="main-container p-bawah-20 auto m-atas-50" style="width:940px; height:700px; margin-top:70px">
         <div class="head-container p-bawah-20 m-atas-4">
             <h1 class="center p-bawah-10 p-atas-20" style="font-weight: bold; font-size:36px;">Proffesion Registration

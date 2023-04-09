@@ -165,8 +165,6 @@
         <a href="https://dpdikadindki.org">
             <div class="logo-ikadin  foot-part1"></div> 
         </a>
-
-
     </div>
     <script>
         function alphaOnly(event) {

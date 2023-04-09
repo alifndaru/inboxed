@@ -135,12 +135,16 @@
                 <div class="font-24 m-bawah-20 center">PILIH JENIS PENDAFTARAN</div>
 
                 <a href="/courses">
-                <img class="m-kiri-50 p-kanan-50 p-kiri-20" src="assets/img/profesi.png">
-                <div class="m-kiri-50 wid-inp-6 m-bawah-20 m-atas-10" style="color: white">Competency <br>Certification</div>
+                    <div class="center inline-block" style="width: 180px; height: 100px;">
+                        <img class="auto center" src="assets/img/profesi.png">
+                        <div class="auto center" style="color: white">Competency <br>Certification</div>
+                    </div>
                 </a>
-                <a href="/regisikadin">
-                <img class="m-kiri-50 p-kiri-20" src="assets/img/student.png" style="position: absolute; top:105px; padding-left:210px;""> 
-                <div class="m-kiri-50 wid-inp-6 m-bawah-20 m-atas-10 center" style="position: absolute; top:173px; padding-left:150px; color:#fff">Proffesion <br>Certification</div>
+                <a href="/regisikadin" class="f-kanan">
+                    <div class="inline-block center" style="width: 180px; height: 100px;">
+                        <img class="auto center" src="assets/img/student.png"> 
+                        <div class="auto center">Proffesion <br>Certification</div>
+                    </div>
                 </a>
                 
             </div>
@@ -191,6 +195,3 @@
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </body>
 </html>
-
-<!--  -->
-

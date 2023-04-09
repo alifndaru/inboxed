@@ -525,8 +525,8 @@
                                     <div class="container-harga-home auto">
                                         {{-- <div class="diskon inline-block">{{$appCurrency['symbol']}} {{ $c->price }}</div> --}}
                                         {{-- <div class="harga inline-block">{{$appCurrency['symbol']}} {{ $c->strike }}</div> --}}
-                                         <div class="diskon inline-block">@rupiah($c->price)</div>
-                                            <div class="harga inline-block">@rupiah($c->strike)</div>
+                                        <div class="diskon inline-block">@rupiah($c->strike)</div>
+                                        <div class="harga inline-block">@rupiah($c->price)</div>
                                             <br> 
                                             <div class="course-rate ul-li">
                                                 <ul>

@@ -208,7 +208,7 @@ $userid = Auth::user()->id;
         </div>
     </nav> -->
 
-<div class="" style="width: 100%; height: 50px; margin-bottom: 100px;"></div>
+<div class="" style="width: 100%; height: 50px; margin-bottom: 120px;"></div>
     <div class="main-container width-736 auto head padding-30 box-sizing m-atas-50">
         <p class="langkah f-kanan p-kanan-20 m-atas-15">Langkah 2</p>
 
