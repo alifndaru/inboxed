@@ -988,6 +988,8 @@ return array (
         'trending' => 'Trending',
         'free' => 'Free',
         'popular' => 'Popular',
+        'profesion' => 'Profesion',
+        'sertification' => 'Sertification',
         'teachers' => 'Teachers',
         'category' => 'Category',
         'title' => 'Title',
