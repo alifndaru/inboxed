@@ -1,0 +1,12 @@
+input[type=tel] {
+    height: 40px;
+    border-radius: 12px;
+    background: #2D3260;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+select#country option[value="indonesia"] { 
+    background-image:url(../img/color.png);   }

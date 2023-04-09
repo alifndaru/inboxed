@@ -56,7 +56,7 @@
     @section('content')
     <div class="" style="width: 100%; height: 50px; margin-bottom: 120px;"></div>
     <!-- =================REGISTRASI=============== -->
-    <div class="main-container auto p-bawah-30 width-800 " style="margin-top: 50px;">
+    <div class="main-container auto p-bawah-30 width-800 " style="margin-top: 50px; ">
         <div class="head width-800 m-atas-4">
             <div class="kembali m-bawah-20 ">
     
@@ -202,7 +202,7 @@ yang diberikan. </div>
                     </div>
                     <div class="f-kiri width-100" style="position:absolute; margin-left:550px">
                         <label for="kode inline-block">Kode Pos</label>
-                        <input class="p-kiri-20 width-190 {{ ($errors->has('kode_pos_kantor'))?'warnaplaceholder':'' }}" type="text" name="kode_pos_kantor" id="" placeholder="" required value="{{ old('kode_pos_kantor') }}">
+                        <input class="p-kiri-20 width-190 {{ ($errors->has('kode_pos_kantor'))?'warnaplaceholder':'' }}" type="number" name="kode_pos_kantor" id="" placeholder="" required value="{{ old('kode_pos_kantor') }}">
                         <div class="merah">{{ ($errors->has('kode_pos_kantor'))?$errors->first('kode_pos_kantor'):'' }}</div>
                     </div>
                    
