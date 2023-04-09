@@ -115,14 +115,14 @@ yang diberikan. </div>
                     {{-- <label for="agama">Agama*</label> --}}
                     {{-- <input class="width-745  p-kiri-20 {{ ($errors->has('agama'))?'warnaplaceholder':'' }}" type="text" name="agama" required value=" {{ old('agama') }} " placeholder="Agama"> --}}
                     <label for="agama">Agama*</label>
-                    <select class="width-745 p-kiri-20 m-bawah-10   ">
-                        <option value="Ateis">Prefer Not Say</option>
+                    <select class="width-745 p-kiri-20 m-bawah-10   " name="agama">
+                        <option value="Prefer Not Say">Prefer Not Say</option>
                         <option value="Islam">Islam</option>
                         <option value="Kristen">Kristen</option>
                         <option value="Katolik">Katolik</option>
                         <option value="Hindu">Hindu</option>
                         <option value="Buddha">Buddha</option>
-                        <option value="Konghuchu">Kong Hu C`hu</option>
+                        <option value="Kong Hu C`hu">Kong Hu C`hu</option>
                       </select>
                     <div class="merah">{{ ($errors->has('agama'))?$errors->first('agama'):'' }}</div>
 
