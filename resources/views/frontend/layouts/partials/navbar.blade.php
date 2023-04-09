@@ -6,7 +6,11 @@
                     <div class="navbar-header float-left">
                         <a class="navbar-brand text-uppercase" href="{{url('/')}}">
                             {{--<img src="{{asset("storage/logos/".config('logo_w_image'))}}" alt="logo">--}}
-                            <img src="{{asset("storage/logos/logo-inboxed-logo.png")}}" alt="logo" class="img-logo">
+                            <!-- <img src="{{asset("storage/logos/logo-inboxed-logo.png")}}" alt="logo" class="img-logo"> -->
+                            <div class="" style="margin-left: -40px;">
+                                <img class="logo-nav" src="assets/img/inboxlogin.png" alt="">
+                                <div class="putih-abu font-32 bold inline-block" style="color: #E7F6F2;">I<span class="lower">nbox</span>e<span class="lower">d</span></div>
+                            </div>
                             <style>
                                 .img-logo{
                                     width: 150px;

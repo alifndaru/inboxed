@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/detailing.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/responsive-regis.css">
 
 
     <style>
@@ -46,8 +47,8 @@
     </div> <!-- header - header -->
 
     <!-- =================REGISTRASI=============== -->
-    <div class="logo-reg " style="top: -10px;"></div>
     <div class="main-container p-bawah-20 container-kanan" style="top: 25px;">
+        <div class="logo-reg" style="top: -40px;"></div>
         <div class="head-container p-bawah-20 m-atas-4">
             <h3 class="center p-bawah-5 p-atas-30 font-30">Register Your Account</h3>
             <div class="m-bawah-4">
@@ -158,13 +159,12 @@
     <div class="foot">
         <div class="foot-part">Partnership with:</div>
         <a href="https://www.triples.co.id/">
-            <div class="logo-triple-s"></div></a>
-            <a href="https://bnsp.go.id/">
-            <div class="logo-bnsp"></div> </a>
-            <a href="https://mindup.atlasfizl.com/">
-            <div class="logo-atlas"></div> </a>
-            <a href="https://www.dpdikadindki.org/">
-                <div class="logo-ikadin"></div> </a>
+            <div class="logo-triple-s  foot-part1"></div>
+        </a>
+
+        <a href="https://dpdikadindki.org">
+            <div class="logo-ikadin  foot-part1"></div> 
+        </a>
     </div>
     <script>
         function alphaOnly(event) {

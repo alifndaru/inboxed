@@ -186,11 +186,18 @@
         <div class="full-container-b p-atas-20 p-bawah-20">
             <div class="center m-bawah-15">Partnership with :</div>
             <div class="auto center">
-    
-                <img class="triples" src="assets/img/Logo Kecil-triples.png" alt="Triple-s">
-                <img class="ikadin" src="assets/img/Logo Kecil-ikadin.png" alt="Logo Ikadin">
-                <img class="M" src="assets/img/Logo Kecil-0.png" alt="">
-                <img class="bnsp" src="assets/img/Logo Kecil-bnsp.png" alt="BNSP">
+                <a href="https://www.triples.co.id/">
+                    <img class="triples" src="assets/img/Logo Kecil-triples.png" alt="Triple-s">
+                </a>
+                <a href="https://dpdikadindki.org">
+                    <img class="ikadin" src="assets/img/Logo Kecil-ikadin.png" alt="Logo Ikadin">
+                </a>
+                <a href="#">
+                    <img class="M" src="assets/img/Logo Kecil-0.png" alt="">
+                </a>
+                <a href="#">
+                    <img class="bnsp" src="assets/img/Logo Kecil-bnsp.png" alt="BNSP">
+                </a>
             </div>
         </div> <!-- CONTAINER PARTNERSHIP -->
     
@@ -289,7 +296,7 @@
                                 <div class="font-18 width-232 m-kiri-10 m-bawah-20 rlt" style="z-index: 10; color:#E7F6F2;"> Cara Mengelola Keuangan Untuk Millenial  </div>
                                 <div class="font-12 m-kiri-10"> Instructure : </div>
                                 <div class="font-12 width-232 m-kiri-10"> Dr. Ir. Alif Ndaru Kusuma Phd.M.komMMSI </div>
-    
+                    
                                 <!-- =================  TANGGAL-PRODUK  =============== -->
                                 <div class="kalender">
                                     <img class="kalender" src="assets/img/kalender.png" alt="">

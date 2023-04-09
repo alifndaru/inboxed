@@ -693,15 +693,27 @@ padding-bottom: 20px;
     position: absolute;
     width: 200px;
     height: 200px;
-    top: 30px;
-    right: 145px;
+    top: -40px;
+    right: 93px;
     /* overflow: hidden;  */
     background-image: url(../img/color.png);
     background-size: 100%; 
     
     background-repeat: no-repeat; 
     z-index: 1;
+}
 
+.logo-regis{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -20px;
+    right: 93px;
+    /* overflow: hidden;  */
+    background-image: url(../img/color.png);
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    z-index: 1;
 }
 
 .logo-kunci{
@@ -830,7 +842,8 @@ padding-bottom: 20px;
     position: fixed;
     width: 115px;
     height: 88px;
-    left: 380px;
+    /* margin-left: 307px; */
+    left: 507px;
     bottom: 23px;
     background-image: url(../img/atlaz.png);
     overflow: hidden;
@@ -846,6 +859,34 @@ padding-bottom: 20px;
     left: 460px;
     bottom: 29px;
     background-image: url(../img/ikadin.png);
+    overflow: hidden;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+}
+
+.logo-bnsp {
+    position: fixed;
+    width: 120px;
+    height: 89px;
+    /* margin-left: 307px; */
+    left: 307px;
+    bottom: 23px;
+    background-image: url(../img/Logo\ Kecil-bnsp.png);
+    overflow: hidden;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+}
+
+.logo-m {
+    position: fixed;
+    width: 120px;
+    height: 89px;
+    /* margin-left: 307px; */
+    left: 407px;
+    bottom: 23px;
+    background-image: url(../img/Logo\ Kecil-0.png);
     overflow: hidden;
     background-size: 70%;
     background-repeat: no-repeat;
@@ -911,3 +952,21 @@ padding-bottom: 20px;
     margin-top: 90px;
     /* width: 100000px; */
 /* } */
+
+
+.upper { text-transform: uppercase; }
+.lower { text-transform: lowercase; }
+.cap   { text-transform: capitalize; }
+.small { font-variant:   small-caps; }
+
+
+.logo-nav{
+    width: 50px;
+    height: 50px;
+    display: inline;
+    /* position: absolute; */
+    margin-top: -10px;
+    /* margin-right: -25px; */
+    /* left: 100px; */
+    /* background: #000; */
+}
