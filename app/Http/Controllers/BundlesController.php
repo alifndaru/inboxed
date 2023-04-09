@@ -39,7 +39,13 @@ class BundlesController extends Controller
         } else if (request('type') == 'featured') {
             $bundles = Bundle::withoutGlobalScope('filter')->canDisableBundle()->where('published', 1)->where('featured', '=', 1)->orderBy('id', 'desc')->paginate(9);
 
-        } else {
+        }else if (request('type') == 'featured') {
+            $bundles = Bundle::withoutGlobalScope('filter')->canDisableBundle()->where('published', 1)->where('sertification', '=', 1)->orderBy('id', 'desc')->paginate(9);
+
+        }else if (request('type') == 'featured') {
+            $bundles = Bundle::withoutGlobalScope('filter')->canDisableBundle()->where('published', 1)->where('profesion', '=', 1)->orderBy('id', 'desc')->paginate(9);
+
+        }else {
             $bundles = Bundle::withoutGlobalScope('filter')->canDisableBundle()->where('published', 1)->orderBy('id', 'desc')->paginate(9);
         }
         $categories = Category::where('status','=',1)->get();
