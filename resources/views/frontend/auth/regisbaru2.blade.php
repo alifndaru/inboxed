@@ -148,7 +148,7 @@
                             <option value="{{ $country->value }}">{{ $country->value }}</option>
                             @endforeach --}}
                             @foreach ($countries as $country)
-                            <option value="{{ $country->value }}">{{ $country->value }}</option>
+                            <option value="{{ $country->phone }}">{{ $country->value }}</option>
                             @endforeach
 
                             {{-- <option value="select_country">Pilih</option>
@@ -159,7 +159,7 @@
                             <option value="spain">Spain</option>
                             <option value="jepang">Jepang</option> --}}
                         </select>
-                        <input class="p-kiri-35 width-210 " type="tel"pattern="[0-9]{10}" required placeholder=" Phone Number" name="phone" required value="{{ old('phone') }}" id="output">
+                        <input class="p-kiri-35 width-210 " type="text"  required placeholder=" Phone Number" name="phone" required value="{{ old('phone') }}" id="output">
                     </div>
                     {{-- <script>
                         function country_code(){
@@ -287,6 +287,14 @@
     </div> --}}
 
 
-  
+    <script>
+        function country_code() {
+          var countrySelect = document.getElementById("country");
+          var phoneInput = document.getElementById("output");
+          var countryCode = countrySelect.options[countrySelect.selectedIndex].value;
+          phoneInput.value = countryCode;
+        }
+        </script>
+
 </body>
 </html>
