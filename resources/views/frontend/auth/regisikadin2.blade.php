@@ -56,7 +56,7 @@
     @section('content')
     <div class="" style="width: 100%; height: 50px; margin-bottom: 120px;"></div>
     <!-- =================REGISTRASI=============== -->
-    <div class="main-container auto p-bawah-30 width-800 " style="margin-top: 50px;">
+    <div class="main-container auto p-bawah-30 width-800 " style="margin-top: 50px; ">
         <div class="head width-800 m-atas-4">
             <div class="kembali m-bawah-20 ">
     
@@ -94,12 +94,10 @@ yang diberikan. </div>
                     <div class="phone p-atas-10 width-900">
                         <label for="handphone">No Handphone*</label> <br>
                         <select class="width-90 center {{ ($errors->has('negara_phone'))?'warnaplaceholder':'' }}" name="negara_phone" id="country" onchange="country_code()">
-                            @foreach ($countries as $country)
-                            <option value="{{ $country->value }}">{{ $country->value }}</option>
-                            @endforeach
+                            <option value="{{ $user->negara_phone }}">{{  $user->negara_phone }}</option>
                             <div class="merah">{{ ($errors->has('negara_phone'))?$errors->first('negara_phone'):'' }}</div>
                         </select>
-                        <input type="number" name="phone" class="width-650 p-kiri-20 {{ ($errors->has('phone'))?'warnaplaceholder':'' }}" id="output" placeholder="Phone Number" value="{{ $user->phone }}">
+                        <input type="text" name="phone" class="width-650 p-kiri-20 {{ ($errors->has('phone'))?'warnaplaceholder':'' }}" id="output" placeholder="Phone Number" value="{{ $user->phone }}" readonly>
                         <div class="merah">{{ ($errors->has('phone'))?$errors->first('phone'):'' }}</div>
                     </div>  
                     <label for="">Jenis Kelamin : </label>
@@ -115,14 +113,14 @@ yang diberikan. </div>
                     {{-- <label for="agama">Agama*</label> --}}
                     {{-- <input class="width-745  p-kiri-20 {{ ($errors->has('agama'))?'warnaplaceholder':'' }}" type="text" name="agama" required value=" {{ old('agama') }} " placeholder="Agama"> --}}
                     <label for="agama">Agama*</label>
-                    <select class="width-745 p-kiri-20 m-bawah-10   ">
-                        <option value="Ateis">Prefer Not Say</option>
+                    <select class="width-745 p-kiri-20 m-bawah-10   " name="agama">
+                        <option value="Prefer Not Say">Prefer Not Say</option>
                         <option value="Islam">Islam</option>
                         <option value="Kristen">Kristen</option>
                         <option value="Katolik">Katolik</option>
                         <option value="Hindu">Hindu</option>
                         <option value="Buddha">Buddha</option>
-                        <option value="Konghuchu">Kong Hu C`hu</option>
+                        <option value="Kong Hu C`hu">Kong Hu C`hu</option>
                       </select>
                     <div class="merah">{{ ($errors->has('agama'))?$errors->first('agama'):'' }}</div>
 
@@ -202,7 +200,7 @@ yang diberikan. </div>
                     </div>
                     <div class="f-kiri width-100" style="position:absolute; margin-left:550px">
                         <label for="kode inline-block">Kode Pos</label>
-                        <input class="p-kiri-20 width-190 {{ ($errors->has('kode_pos_kantor'))?'warnaplaceholder':'' }}" type="text" name="kode_pos_kantor" id="" placeholder="" required value="{{ old('kode_pos_kantor') }}">
+                        <input class="p-kiri-20 width-190 {{ ($errors->has('kode_pos_kantor'))?'warnaplaceholder':'' }}" type="number" name="kode_pos_kantor" id="" placeholder="" required value="{{ old('kode_pos_kantor') }}">
                         <div class="merah">{{ ($errors->has('kode_pos_kantor'))?$errors->first('kode_pos_kantor'):'' }}</div>
                     </div>
                    

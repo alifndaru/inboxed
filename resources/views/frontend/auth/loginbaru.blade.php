@@ -48,8 +48,8 @@
     </div> <!-- header -->
 
 <!-- =================REGISTRASI=============== -->
-<div class="logo-reg" style="margin-top:-30px;"></div>
-    <div class="main-container p-bawah-20 container-kanan" style="margin-top:-40px;">
+<div class="main-container p-bawah-20 container-kanan" style="margin-top:15px;">
+    <div class="logo-reg" style=""></div>
         <div class="head-container p-bawah-20 m-atas-4">
             <h3 class="center p-bawah-20 p-atas-20">Login</h3>
             <div class="m-bawah-4 m-atas-3">
@@ -160,7 +160,7 @@
 
 
 <!-- =================PARTNER=============== -->
-    <div class="foot">
+<div class="foot">
         <div class="foot-part">Partnership with:</div>
         <a href="https://www.triples.co.id/">
         <div class="logo-triple-s"></div></a>

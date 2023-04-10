@@ -109,6 +109,16 @@
                         {!! Form::checkbox('popular', 1, false, []) !!}
                         {!! Form::label('popular',  trans('labels.backend.bundles.fields.popular'), ['class' => 'checkbox control-label font-weight-bold']) !!}
                     </div>
+                    <div class="checkbox d-inline mr-3">
+                        {!! Form::hidden('sertification', 0) !!}
+                        {!! Form::checkbox('sertification', 1, false, []) !!}
+                        {!! Form::label('sertification',  trans('labels.backend.bundles.fields.sertification'), ['class' => 'checkbox control-label font-weight-bold']) !!}
+                    </div>
+                    <div class="checkbox d-inline mr-3">
+                        {!! Form::hidden('profesion', 0) !!}
+                        {!! Form::checkbox('profesion', 1, false, []) !!}
+                        {!! Form::label('profesion',  trans('labels.backend.bundles.fields.profesion'), ['class' => 'checkbox control-label font-weight-bold']) !!}
+                    </div>
                     @endif
                     <div class="checkbox d-inline mr-3">
                         {!! Form::hidden('free', 0) !!}

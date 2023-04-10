@@ -172,41 +172,6 @@ $userid = Auth::user()->id;
 
 <body>
 @section('content')
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="/">
-            <img src="assets/img/color.png" style="width:200px;" class="m-kiri-50">
-        </a>
-
-
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Courses</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Bundles</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Forums</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/newlogin">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Languange (EN)</a>
-                </li>
-            </ul>
-        </div>
-    </nav> -->
 
 <div class="" style="width: 100%; height: 50px; margin-bottom: 120px;"></div>
     <div class="main-container width-736 auto head padding-30 box-sizing m-atas-50">
@@ -265,7 +230,7 @@ $userid = Auth::user()->id;
             <input type="hidden" name="no_ijazah2" value="{{ Session::get('no_ijazah2') }}">
 
             <input class="m-bawah-10 {{ ($errors->has('file_ijazah'))?'warnaplaceholder':'' }}" id="file-upload1" onchange="getFileName1(this)" type="file" name="file_ijazah" />
-            <div class="font-18 m-bawah-5">Ijazah S1</div>
+            <div class="font-18 m-bawah-5">KTP</div>
             <label class="m-bawah-5" for="file-upload1" id="file-drag">
                 <div class="uploader">
                     <div class="center m-atas-20" id="logo-upload-1">
@@ -285,7 +250,7 @@ $userid = Auth::user()->id;
                 <!-- ========== UPLOAD KTP ========== -->
                 <input class="m-bawah-10 {{ ($errors->has('file_ktp'))?'warnaplaceholder':'' }}" id="file-upload2" onchange="getFileName2(this)" type="file" name="file_ktp" />
 
-                <div class="font-18 m-bawah-5">KTP</div>
+                <div class="font-18 m-bawah-5">PAS Foto 2x3</div>
                 <label class="m-bawah-5" for="file-upload2" id="file-drag">
                     <div class="uploader">
                         <div class="center m-atas-20" id="logo-upload-2">
@@ -304,7 +269,7 @@ $userid = Auth::user()->id;
                     <!-- ========== UPLOAD PAS Foto 2x3 ========== -->
                     <input class="m-bawah-10 {{ ($errors->has('file_pasfoto'))?'warnaplaceholder':'' }}" id="file-upload3" onchange="getFileName3(this)" type="file"  name="file_pasfoto" />
 
-                    <div class="font-18 m-bawah-5">PAS Foto 2x3</div>
+                    <div class="font-18 m-bawah-5">Bukti Pembayaran</div>
                     <label class="m-bawah-5" for="file-upload3" id="file-drag">
                         <div class="uploader">
                             <div class="center m-atas-20" id="logo-upload-3">
@@ -323,7 +288,7 @@ $userid = Auth::user()->id;
                         <!-- ========== UPLOAD Bukti Pembayaran ========== -->
                         <input class="m-bawah-10 {{ ($errors->has('file_bukti_pembayaran'))?'warnaplaceholder':'' }}" id="file-upload4" onchange="getFileName4(this)" type="file" name="file_bukti_pembayaran" />
 
-                        <div class="font-18 m-bawah-5">Bukti Pembayaran</div>
+                        <div class="font-18 m-bawah-5">Ijazah S1</div>
                         <label class="m-bawah-5" for="file-upload4" id="file-drag">
                             <div class="uploader">
                                 <div class="center m-atas-20" id="logo-upload-4">

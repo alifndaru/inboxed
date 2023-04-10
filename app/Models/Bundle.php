@@ -15,7 +15,7 @@ class Bundle extends Model
     use SoftDeletes;
 
 
-    protected $fillable = ['category_id', 'title', 'slug', 'description', 'price', 'course_image', 'start_date', 'published','free', 'featured', 'trending', 'popular', 'meta_title', 'meta_description', 'meta_keywords','user_id', 'expire_at'];
+    protected $fillable = ['category_id', 'title', 'slug', 'description', 'price', 'course_image', 'start_date', 'published','free', 'featured', 'trending', 'sertification', 'profesion' ,'popular', 'meta_title', 'meta_description', 'meta_keywords','user_id', 'expire_at'];
 
     protected $appends = ['image'];
 

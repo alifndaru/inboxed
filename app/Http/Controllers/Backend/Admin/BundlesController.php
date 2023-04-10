@@ -121,6 +121,8 @@ class BundlesController extends Controller
                     $text .= ($q->featured == 1) ? "<p class='text-white mb-1 font-weight-bold text-center bg-warning p-1 mr-1' >" . trans('labels.backend.bundles.fields.featured') . "</p>" : "";
                     $text .= ($q->trending == 1) ? "<p class='text-white mb-1 font-weight-bold text-center bg-success p-1 mr-1' >" . trans('labels.backend.bundles.fields.trending') . "</p>" : "";
                     $text .= ($q->popular == 1) ? "<p class='text-white mb-1 font-weight-bold text-center bg-primary p-1 mr-1' >" . trans('labels.backend.bundles.fields.popular') . "</p>" : "";
+                    $text .= ($q->sertification == 1) ? "<p class='text-white mb-1 font-weight-bold text-center bg-primary p-1 mr-1' >" . trans('labels.backend.bundles.fields.sertification') . "</p>" : "";
+                    $text .= ($q->profesion == 1) ? "<p class='text-white mb-1 font-weight-bold text-center bg-primary p-1 mr-1' >" . trans('labels.backend.bundles.fields.profesion') . "</p>" : "";
                 }
                 return $text;
             })

@@ -27,10 +27,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <!-- <link rel="stylesheet" href="style/error.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+                       
     <link rel="stylesheet" href="assets/css/frontend.css">
     <link rel="stylesheet" href="assets/css/new.css">
     <link rel="stylesheet" href="assets/css/ukuran.css">
     <link rel="stylesheet" href="assets/css/detailing.css">
+    <link rel="stylesheet" href="assets/css/phone.css">
+    <script src="assets/js/phone.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -65,25 +70,6 @@
     </style>
 
 </head>
-
-{{-- <script>
-    function alphaOnly(event) {
-
-        alert(event);
-
-        var key;
-
-        if (window.event) {
-            key = window.event.key;
-        } else if (e) {
-            key = e.which;
-        }
-        //var key = window.event.key || event.key;
-        alert(key.value);
-        return ((key >= 65 && key <= 90) || (key >= 95 && key <= 122));
-
-    }
-</script> --}}
 <body>
 
     
@@ -137,20 +123,16 @@
 
                     <div class="f-kiri width-160">
                         <label for="kota red inline-block">Kota</label>
-                        <input class="center width-160 {{ ($errors->has('kota'))?'warnaplaceholder':'' }}" type="text" name="kota" id="" placeholder="Kota" required value="{{ old('kota') }}">
+                        <input class="p-kiri-35 width-160 {{ ($errors->has('kota'))?'warnaplaceholder':'' }}"  type="text" name="kota" id="" style="text-transform: capitalize;"placeholder="Kota" required value="{{ old('kota') }}">
                     </div>
 
                     <div class="f-kanan width-160">
                         <label for="negara red inline-block">Negara</label>
-                        <select class="width-120 center" name="negara" id="" >
+                        <select class="width-160 center" name="negara" id="" >
 
                             @foreach ($countries as $country)
                             <option value="{{ $country->value }}">{{ $country->value }}</option>
-
                             @endforeach
-                            
-                            {{-- <option value="indonesia">indonesia</option>
-                            <option value="jepang">Jepang</option> --}}
                         </select>
                     </div>
                     <div class="merah">{{ ($errors->has('kota'))?$errors->first('kota'):'' }}</div>
@@ -158,21 +140,41 @@
                     <div class="merah">{{ ($errors->has('negara'))?$errors->first('negara'):'' }}</div>
                     
                     <div class="phone">
-                        <label for="tgl-lahir">Phone</label>
+                        <label for="phone" class="">Phone</label>
                         <br>
-                        <select class="width-120 center" name="negara_phone" id="" >
-
-                            @foreach ($countries as $country)
-                            <option value="{{ $country->value }}">{{ $country->value }}</option>
-
-                            @endforeach
+                            <select class="width-120 center" name="negara_phone" onchange="country_code()" id="country">
                             
-                            {{-- <option value="indonesia">indonesia</option>
+                            {{-- @foreach ($countries as $country)
+                            <option value="{{ $country->value }}">{{ $country->value }}</option>
+                            @endforeach --}}
+                            @foreach ($countries as $country)
+                            <option value="{{ $country->phone }}">{{ $country->value }}</option>
+                            @endforeach
+
+                            {{-- <option value="select_country">Pilih</option>
+                            <option value="indonesia">&#x1F1EE;&#x1F1E9;</option>
+                            <option value="us">&#x1F1FA;&#x1F1F8;</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="spain">Spain</option>
                             <option value="jepang">Jepang</option> --}}
                         </select>
-                        <input class="center width-210" type="number" placeholder=" Phone Number" name="phone" required value="{{ old('phone') }}">
+                        <input class="p-kiri-35 width-210 " type="text"  required placeholder=" Phone Number" name="phone" required value="{{ old('phone') }}" id="output">
                     </div>
-
+                    {{-- <script>
+                        function country_code(){
+                            var val = document.getElementById("country").value;
+                            if (val === "select_country"){
+                                document.getElementById("output").value = "";
+                            }
+                            else if (val === "indonesia"){
+                                document.getElementById("output").value = "+62";
+                            }
+                            else if (val === "jepang"){
+                                document.getElementById("output").value = "+22";
+                            }
+                        }
+                    </script> --}}
                  
 
                     <label for="gender">Gender : </label>
@@ -285,6 +287,14 @@
     </div> --}}
 
 
-  
+    <script>
+        function country_code() {
+          var countrySelect = document.getElementById("country");
+          var phoneInput = document.getElementById("output");
+          var countryCode = countrySelect.options[countrySelect.selectedIndex].value;
+          phoneInput.value = countryCode;
+        }
+        </script>
+
 </body>
 </html>

@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Session;
 use App\Mail\MailSend;
+use App\Models\Country;
 use App\Models\Auth\User;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
@@ -20,7 +23,6 @@ use App\Events\Frontend\Auth\UserRegistered;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Validation\ClosureValidationRule;
 use App\Repositories\Frontend\Auth\UserRepository;
-use Session;
 
 
 class NewRegisterController extends Controller
@@ -163,14 +165,7 @@ class NewRegisterController extends Controller
             ]);    
 
         if ($validator->passes()) {
-            // Store your user in database
-            // return view('frontend.auth.regisbaru2',[
-            //         'first_name' => $request->first_name,
-            //         'last_name' =>$request->last_name,
-            //         'email' =>$request->email,
-            //         'password' => $request-> password,
-            //         'password_confirmation' => $request->password_confirmation
-            //     ]);          
+            // Store your user in database     
             return redirect('/newregis2')->with([
                 'first_name' => $request->first_name,
                 'last_name' =>$request->last_name,
@@ -198,15 +193,15 @@ class NewRegisterController extends Controller
                $user->tmp_lahir = isset($data['tmp_lahir']) ? $data['tmp_lahir'] : NULL;
                $user->kota =  isset($data['kota']) ? $data['kota'] : NULL;
                $user->negara = isset($data['negara']) ? $data['negara'] : NULL;
+               $nonegara = DB::table('countries')->where('phone', $data['negara_phone'])->value('value');
+               $data['negara_phone'] = $nonegara;
                $user->negara_phone = isset($data['negara_phone']) ? $data['negara_phone'] : NULL;
                $user->verify_key = isset($data['verify_key']) ? $data['verify_key'] : NULL;
-
                $user->save();
 
        $userForRole = User::find($user->id);
        $userForRole->confirmed = 1;
        $userForRole->save();
-    //    $userForRole->assignRole('student');
         $userForRole->assignRole('user');
 
        if(config('access.users.registration_mail')) {
