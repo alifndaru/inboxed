@@ -165,14 +165,7 @@ class NewRegisterController extends Controller
             ]);    
 
         if ($validator->passes()) {
-            // Store your user in database
-            // return view('frontend.auth.regisbaru2',[
-            //         'first_name' => $request->first_name,
-            //         'last_name' =>$request->last_name,
-            //         'email' =>$request->email,
-            //         'password' => $request-> password,
-            //         'password_confirmation' => $request->password_confirmation
-            //     ]);          
+            // Store your user in database     
             return redirect('/newregis2')->with([
                 'first_name' => $request->first_name,
                 'last_name' =>$request->last_name,
@@ -204,13 +197,11 @@ class NewRegisterController extends Controller
                $data['negara_phone'] = $nonegara;
                $user->negara_phone = isset($data['negara_phone']) ? $data['negara_phone'] : NULL;
                $user->verify_key = isset($data['verify_key']) ? $data['verify_key'] : NULL;
-
                $user->save();
 
        $userForRole = User::find($user->id);
        $userForRole->confirmed = 1;
        $userForRole->save();
-    //    $userForRole->assignRole('student');
         $userForRole->assignRole('user');
 
        if(config('access.users.registration_mail')) {
