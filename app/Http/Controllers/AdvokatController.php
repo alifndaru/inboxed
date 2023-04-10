@@ -42,7 +42,7 @@ class AdvokatController extends Controller
             'negara_phone' => 'required|max:255|string|regex:/^[a-zA-Z]+$/u',
             'phone' => 'required|max:255|string',
             'jenis_kelamin' => 'required|max:255|string|regex:/^[a-zA-Z]+$/u',
-            'agama' => 'required|max:255|string|regex:/^[a-zA-Z]+$/u',
+            'agama' => 'string',
             'tempat_lahir' => 'required|max:255|string',
             'tanggal_lahir' => 'required',
             'alamat' => 'required|max:255|string',

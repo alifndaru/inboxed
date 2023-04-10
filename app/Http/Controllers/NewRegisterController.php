@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Session;
 use App\Mail\MailSend;
+use App\Models\Country;
 use App\Models\Auth\User;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
@@ -20,7 +23,6 @@ use App\Events\Frontend\Auth\UserRegistered;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Validation\ClosureValidationRule;
 use App\Repositories\Frontend\Auth\UserRepository;
-use Session;
 
 
 class NewRegisterController extends Controller
@@ -198,6 +200,8 @@ class NewRegisterController extends Controller
                $user->tmp_lahir = isset($data['tmp_lahir']) ? $data['tmp_lahir'] : NULL;
                $user->kota =  isset($data['kota']) ? $data['kota'] : NULL;
                $user->negara = isset($data['negara']) ? $data['negara'] : NULL;
+               $nonegara = DB::table('countries')->where('phone', $data['negara_phone'])->value('value');
+               $data['negara_phone'] = $nonegara;
                $user->negara_phone = isset($data['negara_phone']) ? $data['negara_phone'] : NULL;
                $user->verify_key = isset($data['verify_key']) ? $data['verify_key'] : NULL;
 

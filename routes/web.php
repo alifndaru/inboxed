@@ -1,10 +1,11 @@
 <?php
 
+use App\Models\Country;
+use Illuminate\Auth\Events\Login;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\Frontend\HomeController;
-use Illuminate\Auth\Events\Login;
-use app\Http\Controllers\Frontend\NewRegisterController;
 use app\Http\Controllers\Frontend\NewHomeController;
+use app\Http\Controllers\Frontend\NewRegisterController;
 
 /*
  * Global Routes
@@ -101,6 +102,7 @@ Route::get('/quesioner-review', 'QuesionerController@quesioner_review')->name('q
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     include_route_files(__DIR__ . '/frontend/');
 });
+
 
 /*
  * Backend Routes
